@@ -1,0 +1,29 @@
+/*? Ограничивающий контейнер */
+@import "./container.css";
+
+/*? Переменные с цветами */
+@import "./root.css";
+
+/*? Для сброса дефолтных маржин/падингов */
+@import "./default.css";
+
+/*? Хедер */
+@import "./header.css";
+
+/*? Блок-герой */
+@import "./hero.css";
+
+/*? Блок с программой  */
+@import "./program.css";
+
+/*? Блок "Как это работает?" */
+@import "./work.css";
+
+/*? Блок "Живой пример" */
+@import "./example.css";
+
+/*? Блок с картой */
+@import "./map.css";
+
+/*? Футер */
+@import "./footer.css";

@@ -1,0 +1,7 @@
+:root {
+  /* Основные цвета */
+  --white: #fff;
+  --black: #000;
+  /* Анимация */
+  --animation: 300ms ease-in-out;
+}
