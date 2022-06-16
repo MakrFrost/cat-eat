@@ -1,0 +1,48 @@
+.program {
+  padding-bottom: 70px;
+}
+.program-list {
+  display: flex;
+  align-items: center;
+}
+.program-item {
+  display: block;
+  width: 540px;
+  height: 374px;
+
+  position: relative;
+  background-color: var(--bcg);
+}
+.program-item:not(:last-child) {
+  margin-right: 80px;
+}
+.program-img {
+  position: absolute;
+  top: 41px;
+  left: 52px;
+}
+.program-title {
+  margin-top: 78px;
+  margin-bottom: 72px;
+  margin-right: auto;
+  margin-left: auto;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+.program-description {
+  margin-bottom: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.program-link {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+.program-icon {
+  width: 50px;
+  height: 10px;
+}
