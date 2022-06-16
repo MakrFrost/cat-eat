@@ -1,0 +1,68 @@
+/*? Стили для хедера */
+.header {
+  padding-top: 54px;
+  padding-bottom: 112px;
+}
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/** Логотип  */
+.header-logo {
+  display: flex;
+  align-items: center;
+
+  color: var(--text);
+  font-style: bold;
+}
+.header-image {
+  width: 60px;
+  height: 50px;
+
+  margin-right: 10px;
+}
+.logo-wrap {
+  margin-left: 8px;
+  color: var(--text-second);
+}
+
+/** Языки  */
+.header-language {
+  display: flex;
+  align-items: center;
+}
+.header-language__eng {
+  margin-right: 24px;
+}
+.header-language__ukr {
+  margin-right: 24px;
+}
+.header-language__ru {
+}
+
+/** Навигация  */
+.header-nav {
+}
+.header-list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.header-item {
+}
+.header-link {
+  color: var(--white);
+  line-height: 30px;
+  text-transform: uppercase;
+  padding-bottom: 6px;
+
+  /* border-bottom: 3px solid var(--white); */
+  transition: border-bottom var(--animation), color var(--animation);
+}
+.header-link:hover {
+  color: rgb(221, 221, 221);
+  /* border-bottom: 3px solid var(--text-second); */
+  border-bottom: 3px solid rgb(221, 221, 221);
+}

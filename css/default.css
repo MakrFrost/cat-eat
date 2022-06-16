@@ -43,6 +43,7 @@ body {
   font-weight: 400;
   font-size: 20px;
   line-height: 1.2;
+  position: relative;
 }
 
 /* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */

@@ -2,6 +2,9 @@
   /* Основные цвета */
   --white: #fff;
   --black: #000;
+  /* Для текста */
+  --text: #111111;
+  --text-second: #444444;
   /* Анимация */
   --animation: 300ms ease-in-out;
 }
