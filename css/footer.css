@@ -26,9 +26,10 @@
   display: block;
 }
 .footer-icon {
-  width: 30px;
+  width: 33px;
   height: 33px;
   fill: #666666;
+  transition: fill var(--animation);
 }
 .vk:hover {
   fill: #4680c2;
