@@ -7,6 +7,8 @@
 .hero-description {
 }
 .hero-title {
+  display: block;
+  width: 482px;
   font-weight: 400;
   font-size: 60px;
   line-height: 60px;

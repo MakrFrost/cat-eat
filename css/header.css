@@ -1,7 +1,7 @@
 /*? Стили для хедера */
 .header {
   padding-top: 54px;
-  padding-bottom: 112px;
+  padding-bottom: 62px;
 }
 .header-flex {
   display: flex;
@@ -95,6 +95,7 @@
 }
 .header-list {
   display: flex;
+  width: 480px;
   align-items: center;
   gap: 30px;
 }
