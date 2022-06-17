@@ -9,4 +9,6 @@
   --bcg: #f2f2f2;
   /* Анимация */
   --animation: 300ms ease-in-out;
+  /* Отступы */
+  --gap-card: 30px;
 }
