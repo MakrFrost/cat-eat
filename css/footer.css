@@ -1,6 +1,10 @@
 .footer {
+  padding: 58px 0 58px 0;
 }
 .footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 .footer-logo {
 }
@@ -11,10 +15,46 @@
 .footer-links {
 }
 .footer-list {
+  display: flex;
 }
 .footer-item {
 }
+.footer-item:not(:last-child) {
+  margin-right: 20px;
+}
 .footer-link {
+  display: block;
 }
 .footer-icon {
+  width: 30px;
+  height: 33px;
+  fill: #666666;
+  transition: fill var(--animation);
 }
+.vk:hover {
+  fill: #4680c2;
+}
+.facebook:hover {
+  fill: #3b5998;
+}
+
+/* ! */
+.section-infographic svg stop {
+  transition: var(--animation);
+}
+.section-infographic svg.linear-gradient path {
+  fill: url(#linear-gradient);
+}
+.section-infographic svg:hover #linear-gradient stop:nth-child(1) {
+  stop-color: #405de6;
+}
+.section-infographic svg:hover #linear-gradient stop:nth-child(2) {
+  stop-color: #5851db;
+}
+.section-infographic svg:hover #linear-gradient stop:nth-child(3) {
+  stop-color: #c13584;
+}
+.section-infographic svg:hover #linear-gradient stop:nth-child(4) {
+  stop-color: #fd1d1d;
+}
+/* ! */
