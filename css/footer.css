@@ -29,7 +29,6 @@
   width: 30px;
   height: 33px;
   fill: #666666;
-  transition: fill var(--animation);
 }
 .vk:hover {
   fill: #4680c2;
@@ -39,22 +38,22 @@
 }
 
 /* ! */
-.section-infographic svg stop {
+.footer-instagram svg stop {
   transition: var(--animation);
 }
-.section-infographic svg.linear-gradient path {
-  fill: url(#linear-gradient);
+.footer-instagram svg.linear-gradient path {
+  fill: url(#linearGradient-1);
 }
-.section-infographic svg:hover #linear-gradient stop:nth-child(1) {
+.footer-instagram svg:hover #linearGradient-1 stop:nth-child(1) {
   stop-color: #405de6;
 }
-.section-infographic svg:hover #linear-gradient stop:nth-child(2) {
+.footer-instagram svg:hover #linearGradient-1 stop:nth-child(2) {
   stop-color: #5851db;
 }
-.section-infographic svg:hover #linear-gradient stop:nth-child(3) {
+.footer-instagram svg:hover #linearGradient-1 stop:nth-child(3) {
   stop-color: #c13584;
 }
-.section-infographic svg:hover #linear-gradient stop:nth-child(4) {
+.footer-instagram svg:hover #linearGradient-1 stop:nth-child(4) {
   stop-color: #fd1d1d;
 }
 /* ! */
