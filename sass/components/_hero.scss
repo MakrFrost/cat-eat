@@ -1,18 +1,19 @@
 .hero {
+  padding-top: 24px;
   padding-bottom: 82px;
 }
 .hero-flex {
-  display: flex;
 }
 .hero-description {
 }
 .hero-title {
   display: block;
-  width: 482px;
   font-weight: 400;
-  font-size: 60px;
-  line-height: 60px;
+  font-size: 36px;
+  line-height: 36px;
   margin-bottom: 40px;
+  color: var(--white);
+  text-align: center;
 }
 .hero-text {
   font-weight: 400;
@@ -20,6 +21,8 @@
   line-height: 20px;
   text-transform: uppercase;
   margin-bottom: 52px;
+  color: var(--white);
+  text-align: center;
 }
 .hero-button {
   border-radius: 4px;
@@ -45,6 +48,6 @@
 .hero-background {
   z-index: -1;
   position: absolute;
-  top: 0;
+  top: 78px;
   right: 0;
 }

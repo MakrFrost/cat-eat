@@ -120,8 +120,7 @@ iframe {
 /*? Хедер */
 /*? Стили для хедера */
 .header {
-  padding-top: 54px;
-  padding-bottom: 62px;
+  padding: 14px 20px;
 }
 
 .header-flex {
@@ -151,7 +150,7 @@ iframe {
 
 /** Языки  */
 .header-language {
-  display: flex;
+  display: none;
   align-items: center;
 }
 
@@ -201,14 +200,14 @@ iframe {
 
 /** Навигация  */
 .header-list {
-  display: flex;
-  width: 480px;
+  display: none;
+  flex-direction: column;
   align-items: center;
   gap: 30px;
 }
 
 .header-link {
-  color: var(--white);
+  color: var(--black);
   line-height: 30px;
   text-transform: uppercase;
   padding-bottom: 6px;
@@ -234,20 +233,18 @@ iframe {
 
 /*? Блок-герой */
 .hero {
+  padding-top: 24px;
   padding-bottom: 82px;
-}
-
-.hero-flex {
-  display: flex;
 }
 
 .hero-title {
   display: block;
-  width: 482px;
   font-weight: 400;
-  font-size: 60px;
-  line-height: 60px;
+  font-size: 36px;
+  line-height: 36px;
   margin-bottom: 40px;
+  color: var(--white);
+  text-align: center;
 }
 
 .hero-text {
@@ -256,6 +253,8 @@ iframe {
   line-height: 20px;
   text-transform: uppercase;
   margin-bottom: 52px;
+  color: var(--white);
+  text-align: center;
 }
 
 .hero-button {
@@ -283,7 +282,7 @@ iframe {
 .hero-background {
   z-index: -1;
   position: absolute;
-  top: 0;
+  top: 78px;
   right: 0;
 }
 
@@ -295,7 +294,7 @@ iframe {
 
 .program-list {
   display: flex;
-  align-items: center;
+  flex-direction: column;
 }
 
 .program-item {
