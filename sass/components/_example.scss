@@ -15,7 +15,6 @@
 }
 .example-text {
   display: block;
-  width: 436px;
   font-family: "Arial";
   font-style: normal;
   font-weight: 400;
@@ -188,6 +187,7 @@ input[type="range"]:focus::-ms-fill-upper {
   }
   .example-text {
     text-align: start;
+    width: 436px;
   }
   .example-list {
     justify-content: flex-start;

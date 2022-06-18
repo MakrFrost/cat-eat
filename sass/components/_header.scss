@@ -180,7 +180,7 @@
   .header-language {
     display: flex;
     align-items: center;
-    margin-right: 100px;
+    margin-right: 164px;
   }
   .header-language__eng {
     padding: 10px;
@@ -192,7 +192,7 @@
   }
   .header-language__ru {
     padding: 10px;
-    margin-right: 24px;
+    margin: 0;
   }
   .header-list {
     display: flex;
@@ -207,10 +207,12 @@
     padding-bottom: 6px;
   }
   .header-link:hover {
-    color: var(--black);
+    opacity: 0.6;
+    color: var(--white);
   }
   .header-link::after {
-    background-color: #68b738;
+    background-color: var(--white);
+    opacity: 0.6;
   }
 }
 
