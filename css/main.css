@@ -335,6 +335,32 @@ iframe {
   right: 0;
 }
 
+@media screen and (min-width: 768px) {
+  .hero-title {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+    text-align: start;
+  }
+
+  .hero-text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #000000;
+    text-align: start;
+  }
+
+  .hero-button {
+    width: 244px;
+  }
+
+  .hero-background {
+    display: none;
+  }
+}
 /*? Блок с программой  */
 .program {
   padding-top: 20px;
@@ -747,30 +773,4 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 /* ! */
-/* test adaptive */
-@media screen and (min-width: 768px) {
-  .hero-title {
-    font-weight: 400;
-    font-size: 60px;
-    line-height: 60px;
-    color: #000000;
-    text-align: start;
-  }
-
-  .hero-text {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 20px;
-    text-transform: uppercase;
-    color: #000000;
-    text-align: start;
-  }
-
-  .hero-button {
-    width: 244px;
-  }
-
-  .hero-background {
-    display: none;
-  }
-}/*# sourceMappingURL=main.css.map */
+/* test adaptive *//*# sourceMappingURL=main.css.map */
