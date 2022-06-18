@@ -35,6 +35,8 @@
   text-transform: uppercase;
 
   transition: background-color var(--animation);
+
+  box-shadow: 1px 1px 44px 13px rgba(0, 0, 0, 0.75);
 }
 .hero-button:hover,
 .hero-button:focus {

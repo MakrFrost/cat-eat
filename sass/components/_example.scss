@@ -4,7 +4,6 @@
   padding-bottom: 40px;
 }
 .example-flex {
-  display: flex;
   justify-content: space-between;
 }
 .example-title {
@@ -12,6 +11,7 @@
   font-size: 60px;
   line-height: 60px;
   margin-bottom: 76px;
+  text-align: center;
 }
 .example-text {
   display: block;
@@ -23,6 +23,7 @@
   line-height: 24px;
   color: #444444;
   margin-bottom: 68px;
+  text-align: center;
 }
 .example-list {
   display: flex;
@@ -62,6 +63,7 @@
   text-transform: uppercase;
 }
 .example-wrap {
+  margin-top: 30px;
 }
 .example-img {
 }

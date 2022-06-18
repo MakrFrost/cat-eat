@@ -266,6 +266,7 @@ iframe {
   background-color: #68b738;
   text-transform: uppercase;
   transition: background-color var(--animation);
+  box-shadow: 1px 1px 44px 13px rgba(0, 0, 0, 0.75);
 }
 
 .hero-button:hover,
@@ -301,14 +302,12 @@ iframe {
 
 .program-item {
   display: block;
-  width: 540px;
-  height: 374px;
   padding: 44px 52px 54px 42px;
   background-color: var(--bcg);
 }
 
 .program-item:not(:last-child) {
-  margin-right: 80px;
+  margin-bottom: 20px;
 }
 
 .program-wrap {
@@ -365,25 +364,18 @@ iframe {
   font-weight: 400;
   font-size: 60px;
   line-height: 60px;
-  margin-bottom: 32px;
+  margin-bottom: 60px;
 }
 
 .work-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   margin-top: calc(-1 * var(--gap-card));
   margin-left: calc(-1 * var(--gap-card));
 }
 
 .work-item {
-  position: relative;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding-top: 40px;
-  max-width: 246px;
-  height: 280px;
+  align-items: center;
+  position: relative;
   flex-basis: calc(25% - var(--gap-card));
   margin-top: var(--gap-card);
   margin-left: var(--gap-card);
@@ -400,14 +392,16 @@ iframe {
 }
 
 .work-text {
+  margin-left: 20px;
   font-family: "Arial";
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 18px;
   color: #444444;
 }
 
 .work-numbers {
+  display: none;
   z-index: -1;
   position: absolute;
   bottom: 0;
@@ -427,7 +421,6 @@ iframe {
 }
 
 .example-flex {
-  display: flex;
   justify-content: space-between;
 }
 
@@ -436,6 +429,7 @@ iframe {
   font-size: 60px;
   line-height: 60px;
   margin-bottom: 76px;
+  text-align: center;
 }
 
 .example-text {
@@ -448,6 +442,7 @@ iframe {
   line-height: 24px;
   color: #444444;
   margin-bottom: 68px;
+  text-align: center;
 }
 
 .example-list {
@@ -491,6 +486,10 @@ iframe {
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+.example-wrap {
+  margin-top: 30px;
 }
 
 .example-form {
