@@ -14,7 +14,6 @@
   align-items: center;
 
   color: var(--text);
-  font-style: bold;
 }
 .header-image {
   width: 60px;
@@ -122,6 +121,44 @@
 }
 .header-link:hover::after {
   transform: scale(1);
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 24px 30px;
+  }
+  .header-flex {
+    justify-content: flex-start;
+  }
+  .header-wrap {
+    display: flex;
+  }
+  .header-logo {
+    margin-right: 20px;
+  }
+  .header-language {
+    display: flex;
+    align-items: center;
+  }
+  .header-language__eng {
+    margin-right: 4px;
+  }
+  .header-language__ukr {
+    margin-right: 4px;
+  }
+  .header-language__ru {
+    margin-right: 4px;
+  }
+  .header-list {
+    display: flex;
+    flex-direction: row;
+  }
+  .header-link:hover {
+    color: var(--black);
+  }
+  .header-link::after {
+    background-color: #68b738;
+  }
 }
 
 // /*? Стили для хедера */
