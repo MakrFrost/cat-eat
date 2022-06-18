@@ -161,15 +161,68 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .header {
+    padding: 54px 62px;
+  }
+  .header-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header-wrap {
+    display: flex;
+    align-items: center;
+  }
+  .header-logo {
+    margin-right: 0px;
+  }
+  .header-language {
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+  }
+  .header-language__eng {
+    padding: 10px;
+    margin-right: 24px;
+  }
+  .header-language__ukr {
+    padding: 10px;
+    margin-right: 24px;
+  }
+  .header-language__ru {
+    padding: 10px;
+    margin-right: 24px;
+  }
+  .header-list {
+    display: flex;
+    width: 480px;
+    align-items: center;
+    gap: 30px;
+  }
+  .header-link {
+    color: var(--white);
+    line-height: 30px;
+    text-transform: uppercase;
+    padding-bottom: 6px;
+  }
+  .header-link:hover {
+    color: var(--black);
+  }
+  .header-link::after {
+    background-color: #68b738;
+  }
+}
+
 // /*? Стили для хедера */
 // .header {
 //   padding-top: 54px;
 //   padding-bottom: 62px;
 // }
 // .header-flex {
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-between;
+// display: flex;
+// align-items: center;
+// justify-content: space-between;
 // }
 
 // /** Логотип  */
@@ -197,8 +250,8 @@
 //   align-items: center;
 // }
 // .header-language__eng {
-//   padding: 10px;
-//   margin-right: 24px;
+// padding: 10px;
+// margin-right: 24px;
 // }
 // .header-language__eng:hover {
 //   outline: 1px solid var(--text-second);
