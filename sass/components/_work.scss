@@ -70,10 +70,17 @@
     margin-top: var(--gap-card);
     margin-left: var(--gap-card);
   }
-  .work-item:not(:last-child) {
-  }
   .work-numbers {
     display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .work-list {
+    flex-wrap: nowrap;
+  }
+  .work-text {
+    margin-left: 0;
   }
 }
 

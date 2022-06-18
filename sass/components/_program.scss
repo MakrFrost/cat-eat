@@ -57,3 +57,17 @@
   height: 10px;
   transition: all var(--animation);
 }
+
+@media screen and (min-width: 1200px) {
+  .program-list {
+    display: flex;
+    flex-direction: row;
+  }
+  .program-item {
+    width: 570px;
+    height: 374px;
+  }
+  .program-item:not(:last-child) {
+    margin-right: 30px;
+  }
+}

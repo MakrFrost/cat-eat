@@ -88,7 +88,6 @@
 input[type="range"] {
   height: 42px;
   -webkit-appearance: none;
-  margin: 10px 0;
   width: 100%;
 }
 input[type="range"]:focus {
@@ -174,9 +173,29 @@ input[type="range"]:focus::-ms-fill-upper {
 /*! Край инпута */
 
 .example-img__dscrpt {
-  margin-left: 6px;
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 1200px) {
+  .example-flex {
+    display: flex;
+  }
+  .example-title {
+    text-align: start;
+  }
+  .example-text {
+    text-align: start;
+  }
+  .example-list {
+    justify-content: flex-start;
+  }
+  .example-pay {
+    text-align: start;
+  }
+  .example-slider {
+    padding: 0 20px 0 20px;
+  }
 }

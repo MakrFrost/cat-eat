@@ -424,6 +424,23 @@ iframe {
     display: none;
   }
 }
+@media screen and (min-width: 1200px) {
+  .hero-flex {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .hero-button {
+    box-shadow: none;
+    width: 300px;
+    margin-bottom: 0;
+  }
+
+  .hero-background {
+    display: block;
+    top: 0;
+  }
+}
 /*? Блок с программой  */
 .program {
   padding-top: 20px;
@@ -489,6 +506,21 @@ iframe {
   transition: all var(--animation);
 }
 
+@media screen and (min-width: 1200px) {
+  .program-list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .program-item {
+    width: 570px;
+    height: 374px;
+  }
+
+  .program-item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
 /*? Блок "Как это работает?" */
 .work {
   padding-bottom: 50px;
@@ -570,6 +602,15 @@ iframe {
 
   .work-numbers {
     display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .work-list {
+    flex-wrap: nowrap;
+  }
+
+  .work-text {
+    margin-left: 0;
   }
 }
 /*? Блок "Живой пример" */
@@ -674,7 +715,6 @@ iframe {
 input[type=range] {
   height: 42px;
   -webkit-appearance: none;
-  margin: 10px 0;
   width: 100%;
 }
 
@@ -772,13 +812,37 @@ input[type=range]:focus::-ms-fill-upper {
 
 /*! Край инпута */
 .example-img__dscrpt {
-  margin-left: 6px;
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 1200px) {
+  .example-flex {
+    display: flex;
+  }
+
+  .example-title {
+    text-align: start;
+  }
+
+  .example-text {
+    text-align: start;
+  }
+
+  .example-list {
+    justify-content: flex-start;
+  }
+
+  .example-pay {
+    text-align: start;
+  }
+
+  .example-slider {
+    padding: 0 20px 0 20px;
+  }
+}
 /*? Блок с картой */
 .map {
   padding-top: 20px;
@@ -860,15 +924,4 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 /* ! */
-/* test adaptive */
-@media screen and (min-width: 1200px) {
-  .hero-flex {
-    display: flex;
-    justify-content: flex-start;
-  }
-
-  .hero-background {
-    display: block;
-    top: 0;
-  }
-}/*# sourceMappingURL=main.css.map */
+/* test adaptive *//*# sourceMappingURL=main.css.map */
