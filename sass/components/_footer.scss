@@ -1,0 +1,63 @@
+.footer {
+  padding: 58px 0 58px 0;
+}
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.footer-logo {
+}
+.header-logo {
+}
+.logo-wrap {
+}
+.footer-links {
+}
+.footer-list {
+  display: flex;
+}
+.footer-item {
+}
+.footer-item:not(:last-child) {
+  margin-right: 20px;
+}
+.footer-link {
+  display: block;
+}
+.footer-icon {
+  width: 33px;
+  height: 33px;
+  fill: #666666;
+  transition: fill var(--animation);
+}
+.vk:hover {
+  fill: #4680c2;
+}
+.facebook:hover {
+  fill: #3b5998;
+}
+
+/* ! */
+.footer-instagram svg stop {
+  transition: var(--animation);
+}
+.footer-instagram svg.linear-gradient path {
+  fill: url(#linearGradient-1);
+}
+.footer-instagram svg:hover #linearGradient-1 stop:nth-child(1) {
+  stop-color: #405de6;
+}
+.footer-instagram svg:hover #linearGradient-1 stop:nth-child(2) {
+  stop-color: #5851db;
+}
+.footer-instagram svg:hover #linearGradient-1 stop:nth-child(3) {
+  stop-color: #c13584;
+}
+.footer-instagram svg:hover #linearGradient-1 stop:nth-child(4) {
+  stop-color: #fd1d1d;
+}
+.footer-instagram svg:hover #linearGradient-1 stop:nth-child(5) {
+  stop-color: #ff9900;
+}
+/* ! */

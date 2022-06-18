@@ -1,31 +1,31 @@
-@import "./container.css";
+@import "./components/container";
 
 /*? Переменные с цветами */
-@import "./root.css";
+@import "./components/root";
 
 /*? Для сброса дефолтных маржин/падингов */
-@import "./default.css";
+@import "./components/default";
 
 /*? Хедер */
-@import "./header.css";
+@import "./components/header";
 
 /*? Блок-герой */
-@import "./hero.css";
+@import "./components/hero";
 
 /*? Блок с программой  */
-@import "./program.css";
+@import "./components/program";
 
 /*? Блок "Как это работает?" */
-@import "./work.css";
+@import "./components/work";
 
 /*? Блок "Живой пример" */
-@import "./example.css";
+@import "./components/example";
 
 /*? Блок с картой */
-@import "./map.css";
+@import "./components/map";
 
 /*? Футер */
-@import "./footer.css";
+@import "./components/footer";
 
 /* test adaptive */
-@import "./adap.css";
+@import "./components/adap";
