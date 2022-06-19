@@ -1,113 +1,109 @@
 /*? Стили для хедера */
 .header {
   padding: 14px 20px;
-}
-.header-flex {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+  &-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-/** Логотип  */
-.header-logo {
-  display: flex;
-  align-items: center;
+  //** Логотип  */
+  &-logo {
+    display: flex;
+    align-items: center;
 
-  color: var(--text);
-}
-.header-image {
-  width: 60px;
-  height: 50px;
+    color: var(--text);
+    &-wrap {
+      margin-left: 8px;
+      color: var(--text-second);
+    }
+  }
+  &-image {
+    width: 60px;
+    height: 50px;
 
-  margin-right: 10px;
-}
-.logo-wrap {
-  margin-left: 8px;
-  color: var(--text-second);
-}
+    margin-right: 10px;
+  }
+  //** Языки  */
+  &-language {
+    display: none;
+    align-items: center;
+    &__eng {
+      padding: 10px;
+      margin-right: 24px;
+      &:hover {
+        outline: 1px solid var(--text-second);
+        border-radius: 50%;
+        color: var(--white);
+        background-image: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.7) 0%,
+            rgba(111, 111, 111, 0.7) 30%,
+            rgba(149, 149, 149, 0.7) 60%,
+            rgba(162, 162, 162, 0.7) 100%
+          ),
+          url(https://cdn.pixabay.com/photo/2012/04/10/16/14/union-jack-26119__480.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+    }
+    &__ukr {
+      padding: 10px;
+      margin-right: 24px;
+      &:hover {
+        outline: 1px solid var(--text-second);
+        border-radius: 50%;
+        color: var(--white);
+        background-image: linear-gradient(
+            180deg,
+            rgba(0, 61, 255, 0.4) 30%,
+            rgba(255, 252, 0, 0.4) 70%
+          ),
+          url(https://irc-consult.com/wp-content/uploads/2020/12/ukraine-national-fabric-flag-textile-background-symbol-of-international-world-european-country_113767-2440.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+    }
+    &__ru {
+      padding: 10px;
+      &:hover {
+        outline: 1px solid var(--text-second);
+        border-radius: 50%;
+        color: var(--white);
+        background-image: linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0.4) 20%,
+            rgba(0, 31, 255, 0.19931722689075626) 50%,
+            rgba(255, 255, 255, 0.4009978991596639) 80%
+          ),
+          url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Anti-war_flag_of_Russian_protesters_%282022%29.svg/250px-Anti-war_flag_of_Russian_protesters_%282022%29.svg.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+    }
+  }
+  &-list {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  &-link {
+    color: var(--black);
+    line-height: 30px;
+    text-transform: uppercase;
+    padding-bottom: 6px;
+    &-link:hover {
+      color: #ffffff60;
+    }
 
-/** Языки  */
-.header-language {
-  display: none;
-  align-items: center;
-}
-.header-language__eng {
-  padding: 10px;
-  margin-right: 24px;
-}
-.header-language__eng:hover {
-  outline: 1px solid var(--text-second);
-  border-radius: 50%;
-  color: var(--white);
-  background-image: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.7) 0%,
-      rgba(111, 111, 111, 0.7) 30%,
-      rgba(149, 149, 149, 0.7) 60%,
-      rgba(162, 162, 162, 0.7) 100%
-    ),
-    url(https://cdn.pixabay.com/photo/2012/04/10/16/14/union-jack-26119__480.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-.header-language__ukr {
-  padding: 10px;
-  margin-right: 24px;
-}
-.header-language__ukr:hover {
-  outline: 1px solid var(--text-second);
-  border-radius: 50%;
-  color: var(--white);
-  background-image: linear-gradient(
-      180deg,
-      rgba(0, 61, 255, 0.4) 30%,
-      rgba(255, 252, 0, 0.4) 70%
-    ),
-    url(https://irc-consult.com/wp-content/uploads/2020/12/ukraine-national-fabric-flag-textile-background-symbol-of-international-world-european-country_113767-2440.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-.header-language__ru {
-  padding: 10px;
-}
-.header-language__ru:hover {
-  outline: 1px solid var(--text-second);
-  border-radius: 50%;
-  color: var(--white);
-  background-image: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.4) 20%,
-      rgba(0, 31, 255, 0.19931722689075626) 50%,
-      rgba(255, 255, 255, 0.4009978991596639) 80%
-    ),
-    url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Anti-war_flag_of_Russian_protesters_%282022%29.svg/250px-Anti-war_flag_of_Russian_protesters_%282022%29.svg.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-/** Навигация  */
-.header-list {
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-}
-
-.header-link {
-  color: var(--black);
-  line-height: 30px;
-  text-transform: uppercase;
-  padding-bottom: 6px;
-}
-
-.header-link:hover {
-  color: #ffffff60;
-}
-.header-link:active {
-  color: #ffffff30;
+    &-link:active {
+      color: #ffffff30;
+    }
+  }
 }
 
 @media screen and (min-width: 768px) {
