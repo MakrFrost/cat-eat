@@ -96,11 +96,11 @@
     line-height: 30px;
     text-transform: uppercase;
     padding-bottom: 6px;
-    &-link:hover {
+    &:hover {
       color: #ffffff60;
     }
 
-    &-link:active {
+    &:active {
       color: #ffffff30;
     }
   }
@@ -202,6 +202,12 @@
     }
     &-link {
       color: var(--white);
+      &:hover {
+        color: #ffffff60;
+      }
+      &:active {
+        color: #ffffff30;
+      }
       &__black {
         color: var(--black);
         line-height: 30px;
@@ -214,8 +220,15 @@
           color: #00000030;
         }
       }
-      &:hover {
-        color: #ffffff60;
+      &__catalog {
+        &::after {
+          content: "";
+          display: block;
+          width: 100%;
+          height: 3px;
+          background-color: #68b738;
+          transition: transform var(--animation);
+        }
       }
     }
   }
