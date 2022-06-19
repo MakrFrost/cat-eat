@@ -1,145 +1,87 @@
 .work {
   padding-bottom: 50px;
-}
-.work-title {
-  text-align: left;
-  font-weight: 400;
-  font-size: 60px;
-  line-height: 60px;
-  margin-bottom: 60px;
-}
-.work-list {
-  margin-top: calc(-1 * var(--gap-card));
-  margin-left: calc(-1 * var(--gap-card));
-}
-.work-item {
-  display: flex;
-  align-items: center;
+  &-title {
+    text-align: left;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 60px;
+  }
+  &-list {
+    margin-top: calc(-1 * var(--gap-card));
+    margin-left: calc(-1 * var(--gap-card));
+  }
+  &-item {
+    display: flex;
+    align-items: center;
 
-  position: relative;
+    position: relative;
 
-  flex-basis: calc(100% / 4 - var(--gap-card));
-  margin-top: var(--gap-card);
-  margin-left: var(--gap-card);
-}
-.work-item:not(:last-child) {
-  margin-bottom: 0;
-}
-.work-img {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 32px;
-}
-.work-text {
-  margin-left: 20px;
-  font-family: "Arial";
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  color: #444444;
-}
-.work-numbers {
-  display: none;
-  z-index: -1;
-  position: absolute;
-  bottom: 0;
-  right: 10px;
+    flex-basis: calc(100% / 4 - var(--gap-card));
+    margin-top: var(--gap-card);
+    margin-left: var(--gap-card);
+  }
+  &:not(:last-child) {
+    margin-bottom: 0;
+  }
+  &-img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 32px;
+  }
+  &-text {
+    margin-left: 20px;
+    font-family: "Arial";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #444444;
+  }
+  &-numbers {
+    display: none;
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
 
-  font-weight: 400;
-  font-size: 280px;
-  text-align: center;
-  color: #f2f2f2;
+    font-weight: 400;
+    font-size: 280px;
+    text-align: center;
+    color: #f2f2f2;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .work {
     padding-top: 20px;
     border: 1px solid #e6e6e6;
-  }
-  .work-list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .work-item {
-    display: block;
-    position: relative;
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &-item {
+      display: block;
+      position: relative;
 
-    width: 230px;
-    height: 280px;
-    flex-basis: calc(100% / 2 - var(--gap-card));
-    margin-top: var(--gap-card);
-    margin-left: var(--gap-card);
-  }
-  .work-numbers {
-    display: block;
+      width: 230px;
+      height: 280px;
+      flex-basis: calc(100% / 2 - var(--gap-card));
+      margin-top: var(--gap-card);
+      margin-left: var(--gap-card);
+    }
+    &-numbers {
+      display: block;
+    }
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .work-list {
-    flex-wrap: nowrap;
-  }
-  .work-text {
-    margin-left: 0;
+  .work {
+    &-list {
+      flex-wrap: nowrap;
+    }
+    &-text {
+      margin-left: 0;
+    }
   }
 }
-
-// .work {
-//   padding-bottom: 50px;
-// }
-// .work-title {
-//   text-align: left;
-//   font-weight: 400;
-//   font-size: 60px;
-//   line-height: 60px;
-//   margin-bottom: 32px;
-// }
-// .work-list {
-//   display: flex;
-//   flex-wrap: wrap;
-//   justify-content: center;
-//   margin-top: calc(-1 * var(--gap-card));
-//   margin-left: calc(-1 * var(--gap-card));
-// }
-// .work-item {
-//   position: relative;
-
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: flex-start;
-
-//   padding-top: 40px;
-//   max-width: 246px;
-//   height: 280px;
-
-//   flex-basis: calc(100% / 4 - var(--gap-card));
-//   margin-top: var(--gap-card);
-//   margin-left: var(--gap-card);
-// }
-// .work-item:not(:last-child) {
-//   margin-bottom: 0;
-// }
-// .work-img {
-//   width: 80px;
-//   height: 80px;
-//   margin-bottom: 32px;
-// }
-// .work-text {
-//   font-family: "Arial";
-//   font-weight: 400;
-//   font-size: 16px;
-//   line-height: 24px;
-//   color: #444444;
-// }
-// .work-numbers {
-//   z-index: -1;
-//   position: absolute;
-//   bottom: 0;
-//   right: 10px;
-
-//   font-weight: 400;
-//   font-size: 280px;
-//   line-height: 280px;
-//   text-align: center;
-//   color: #f2f2f2;
-// }

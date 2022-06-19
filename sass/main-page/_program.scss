@@ -59,10 +59,14 @@
     &-list {
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
     }
     &-item {
       width: 570px;
       height: 374px;
+      &:not(:last-child) {
+        margin: 0;
+      }
     }
     &:not(:last-child) {
       margin-right: 30px;
