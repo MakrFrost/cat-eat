@@ -382,11 +382,13 @@ iframe {
 
 .hero-button:hover,
 .hero-button:focus {
-  background-color: #519129;
+  background-color: #5eaa2f;
 }
 
 .hero-button:active {
   outline: 1px solid var(--black);
+  background-color: #5eaa2f;
+  color: rgba(255, 255, 255, 0.1882352941);
 }
 
 .hero-image {

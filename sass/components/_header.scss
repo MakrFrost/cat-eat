@@ -89,16 +89,13 @@
 }
 
 /** Навигация  */
-.header-nav {
-}
 .header-list {
   display: none;
   flex-direction: column;
   align-items: center;
   gap: 30px;
 }
-.header-item {
-}
+
 .header-link {
   color: var(--black);
   line-height: 30px;
