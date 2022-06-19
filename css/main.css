@@ -294,6 +294,18 @@ iframe {
   .header-link {
     color: var(--white);
   }
+  .header-link__black {
+    color: var(--black);
+    line-height: 30px;
+    text-transform: uppercase;
+    padding-bottom: 6px;
+  }
+  .header-link__black:hover {
+    color: rgba(0, 0, 0, 0.3764705882);
+  }
+  .header-link__black:active {
+    color: rgba(0, 0, 0, 0.1882352941);
+  }
   .header-link:hover {
     color: rgba(255, 255, 255, 0.3764705882);
   }

@@ -202,6 +202,18 @@
     }
     &-link {
       color: var(--white);
+      &__black {
+        color: var(--black);
+        line-height: 30px;
+        text-transform: uppercase;
+        padding-bottom: 6px;
+        &:hover {
+          color: #00000060;
+        }
+        &:active {
+          color: #00000030;
+        }
+      }
       &:hover {
         color: #ffffff60;
       }
