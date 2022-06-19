@@ -109,226 +109,102 @@
 @media screen and (min-width: 768px) {
   .header {
     padding: 24px 30px;
-  }
-  .header-flex {
-    justify-content: space-around;
-  }
-  .header-wrap {
-    display: flex;
-    align-items: center;
-  }
-  .header-logo {
-    margin-right: 0;
-  }
-  .header-language {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-right: 100px;
-  }
-  .header-language__eng {
-    margin-right: 4px;
-  }
-  .header-language__ukr {
-    margin-right: 4px;
-  }
-  .header-language__ru {
-    margin-right: 4px;
-  }
-  .header-list {
-    display: flex;
-    flex-direction: row;
-    flex-direction: column;
-  }
-  .header-link:hover {
-    color: #00000060;
-  }
-
-  .header-link__active::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 3px;
-    background-color: var(--white);
-    transition: transform var(--animation);
-  }
-  .header-link__active:hover::after {
-    background-color: #ffffff60;
+    &-flex {
+      justify-content: space-around;
+    }
+    &-wrap {
+      display: flex;
+      align-items: center;
+    }
+    &-logo {
+      margin-right: 0;
+    }
+    &-language {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-right: 100px;
+      &__eng {
+        margin-right: 4px;
+      }
+      &__ukr {
+        margin-right: 4px;
+      }
+      &__ru {
+        margin-right: 4px;
+      }
+    }
+    &-list {
+      display: flex;
+      flex-direction: row;
+      flex-direction: column;
+    }
+    &-link {
+      &__active {
+        &::after {
+          content: "";
+          display: block;
+          width: 100%;
+          height: 3px;
+          background-color: var(--white);
+          transition: transform var(--animation);
+        }
+        &:hover::after {
+          background-color: #ffffff60;
+        }
+      }
+      &:hover {
+        color: #00000060;
+      }
+    }
   }
 }
 
 @media screen and (min-width: 1200px) {
   .header {
     padding: 54px 62px;
-  }
-  .header-flex {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .header-wrap {
-    display: flex;
-    align-items: center;
-  }
-  .header-logo {
-    margin-right: 0px;
-  }
-  .header-language {
-    display: flex;
-    align-items: center;
-    margin-right: 164px;
-    flex-direction: row;
-  }
-  .header-language__eng {
-    padding: 10px;
-    margin-right: 24px;
-  }
-  .header-language__ukr {
-    padding: 10px;
-    margin-right: 24px;
-  }
-  .header-language__ru {
-    padding: 10px;
-    margin: 0;
-  }
-  .header-list {
-    display: flex;
-    flex-direction: row;
-    width: 480px;
-    align-items: center;
-    gap: 30px;
-  }
-  .header-link {
-    color: var(--white);
-  }
-  .header-link:hover {
-    color: #ffffff60;
+    &-flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &-wrap {
+      display: flex;
+      align-items: center;
+    }
+    &-logo {
+      margin-right: 0px;
+    }
+    &-language {
+      display: flex;
+      align-items: center;
+      margin-right: 164px;
+      flex-direction: row;
+    }
+    &__eng {
+      padding: 10px;
+      margin-right: 24px;
+    }
+    &__ukr {
+      padding: 10px;
+      margin-right: 24px;
+    }
+    &__ru {
+      padding: 10px;
+      margin: 0;
+    }
+    &-list {
+      display: flex;
+      flex-direction: row;
+      width: 480px;
+      align-items: center;
+      gap: 30px;
+    }
+    &-link {
+      color: var(--white);
+      &:hover {
+        color: #ffffff60;
+      }
+    }
   }
 }
-
-// /*? Стили для хедера */
-// .header {
-//   padding-top: 54px;
-//   padding-bottom: 62px;
-// }
-// .header-flex {
-// display: flex;
-// align-items: center;
-// justify-content: space-between;
-// }
-
-// /** Логотип  */
-// .header-logo {
-//   display: flex;
-//   align-items: center;
-
-//   color: var(--text);
-//   font-style: bold;
-// }
-// .header-image {
-//   width: 60px;
-//   height: 50px;
-
-//   margin-right: 10px;
-// }
-// .logo-wrap {
-//   margin-left: 8px;
-//   color: var(--text-second);
-// }
-
-// /** Языки  */
-// .header-language {
-//   display: flex;
-//   align-items: center;
-// }
-// .header-language__eng {
-// padding: 10px;
-// margin-right: 24px;
-// }
-// .header-language__eng:hover {
-//   outline: 1px solid var(--text-second);
-//   border-radius: 50%;
-//   color: var(--white);
-//   background-image: linear-gradient(
-//       180deg,
-//       rgba(0, 0, 0, 0.7) 0%,
-//       rgba(111, 111, 111, 0.7) 30%,
-//       rgba(149, 149, 149, 0.7) 60%,
-//       rgba(162, 162, 162, 0.7) 100%
-//     ),
-//     url(https://cdn.pixabay.com/photo/2012/04/10/16/14/union-jack-26119__480.png);
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-size: cover;
-// }
-// .header-language__ukr {
-//   padding: 10px;
-//   margin-right: 24px;
-// }
-// .header-language__ukr:hover {
-//   outline: 1px solid var(--text-second);
-//   border-radius: 50%;
-//   color: var(--white);
-//   background-image: linear-gradient(
-//       180deg,
-//       rgba(0, 61, 255, 0.4) 30%,
-//       rgba(255, 252, 0, 0.4) 70%
-//     ),
-//     url(https://irc-consult.com/wp-content/uploads/2020/12/ukraine-national-fabric-flag-textile-background-symbol-of-international-world-european-country_113767-2440.jpg);
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-size: cover;
-// }
-// .header-language__ru {
-//   padding: 10px;
-// }
-// .header-language__ru:hover {
-//   outline: 1px solid var(--text-second);
-//   border-radius: 50%;
-//   color: var(--white);
-//   background-image: linear-gradient(
-//       180deg,
-//       rgba(255, 255, 255, 0.4) 20%,
-//       rgba(0, 31, 255, 0.19931722689075626) 50%,
-//       rgba(255, 255, 255, 0.4009978991596639) 80%
-//     ),
-//     url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Anti-war_flag_of_Russian_protesters_%282022%29.svg/250px-Anti-war_flag_of_Russian_protesters_%282022%29.svg.png);
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-size: cover;
-// }
-
-// /** Навигация  */
-// .header-nav {
-// }
-// .header-list {
-//   display: flex;
-//   width: 480px;
-//   align-items: center;
-//   gap: 30px;
-// }
-// .header-item {
-// }
-// .header-link {
-//   color: var(--white);
-//   line-height: 30px;
-//   text-transform: uppercase;
-//   padding-bottom: 6px;
-// }
-
-// .header-link:hover {
-//   color: rgb(221, 221, 221);
-// }
-
-// .header-link::after {
-//   content: "";
-//   display: block;
-//   width: 100%;
-//   height: 3px;
-//   background-color: rgb(221, 221, 221);
-//   transform: scale(0);
-//   transition: transform var(--animation);
-// }
-// .header-link:hover::after {
-//   transform: scale(1);
-// }
