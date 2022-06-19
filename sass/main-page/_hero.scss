@@ -81,6 +81,13 @@
 
 @media screen and (min-width: 1200px) {
   .hero {
+    &-title {
+      font-weight: 400;
+      font-size: 60px;
+      line-height: 60px;
+      color: #000000;
+      text-align: start;
+    }
     &-flex {
       display: flex;
       justify-content: flex-start;
