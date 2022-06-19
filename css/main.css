@@ -213,21 +213,11 @@ iframe {
 }
 
 .header-link:hover {
-  color: rgb(221, 221, 221);
+  color: rgba(255, 255, 255, 0.3764705882);
 }
 
-.header-link::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 3px;
-  background-color: rgb(221, 221, 221);
-  transform: scale(0);
-  transition: transform var(--animation);
-}
-
-.header-link:hover::after {
-  transform: scale(1);
+.header-link:active {
+  color: rgba(255, 255, 255, 0.1882352941);
 }
 
 @media screen and (min-width: 768px) {
@@ -236,20 +226,23 @@ iframe {
   }
 
   .header-flex {
-    justify-content: flex-start;
+    justify-content: space-around;
   }
 
   .header-wrap {
     display: flex;
+    align-items: center;
   }
 
   .header-logo {
-    margin-right: 20px;
+    margin-right: 0;
   }
 
   .header-language {
     display: flex;
     align-items: center;
+    flex-direction: column;
+    margin-right: 100px;
   }
 
   .header-language__eng {
@@ -267,14 +260,24 @@ iframe {
   .header-list {
     display: flex;
     flex-direction: row;
+    flex-direction: column;
   }
 
   .header-link:hover {
-    color: var(--black);
+    color: rgba(0, 0, 0, 0.3764705882);
   }
 
-  .header-link::after {
-    background-color: #68b738;
+  .header-link__active::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: var(--white);
+    transition: transform var(--animation);
+  }
+
+  .header-link__active:hover::after {
+    background-color: rgba(255, 255, 255, 0.3764705882);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -301,6 +304,7 @@ iframe {
     display: flex;
     align-items: center;
     margin-right: 164px;
+    flex-direction: row;
   }
 
   .header-language__eng {
@@ -320,6 +324,7 @@ iframe {
 
   .header-list {
     display: flex;
+    flex-direction: row;
     width: 480px;
     align-items: center;
     gap: 30px;
@@ -327,19 +332,10 @@ iframe {
 
   .header-link {
     color: var(--white);
-    line-height: 30px;
-    text-transform: uppercase;
-    padding-bottom: 6px;
   }
 
   .header-link:hover {
-    opacity: 0.6;
-    color: var(--white);
-  }
-
-  .header-link::after {
-    background-color: var(--white);
-    opacity: 0.6;
+    color: rgba(255, 255, 255, 0.3764705882);
   }
 }
 /*? Блок-герой */

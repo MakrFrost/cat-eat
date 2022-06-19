@@ -104,20 +104,10 @@
 }
 
 .header-link:hover {
-  color: rgb(221, 221, 221);
+  color: #ffffff60;
 }
-
-.header-link::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 3px;
-  background-color: rgb(221, 221, 221);
-  transform: scale(0);
-  transition: transform var(--animation);
-}
-.header-link:hover::after {
-  transform: scale(1);
+.header-link:active {
+  color: #ffffff30;
 }
 
 @media screen and (min-width: 768px) {
@@ -125,17 +115,20 @@
     padding: 24px 30px;
   }
   .header-flex {
-    justify-content: flex-start;
+    justify-content: space-around;
   }
   .header-wrap {
     display: flex;
+    align-items: center;
   }
   .header-logo {
-    margin-right: 20px;
+    margin-right: 0;
   }
   .header-language {
     display: flex;
     align-items: center;
+    flex-direction: column;
+    margin-right: 100px;
   }
   .header-language__eng {
     margin-right: 4px;
@@ -149,12 +142,22 @@
   .header-list {
     display: flex;
     flex-direction: row;
+    flex-direction: column;
   }
   .header-link:hover {
-    color: var(--black);
+    color: #00000060;
   }
-  .header-link::after {
-    background-color: #68b738;
+
+  .header-link__active::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: var(--white);
+    transition: transform var(--animation);
+  }
+  .header-link__active:hover::after {
+    background-color: #ffffff60;
   }
 }
 
@@ -178,6 +181,7 @@
     display: flex;
     align-items: center;
     margin-right: 164px;
+    flex-direction: row;
   }
   .header-language__eng {
     padding: 10px;
@@ -193,23 +197,16 @@
   }
   .header-list {
     display: flex;
+    flex-direction: row;
     width: 480px;
     align-items: center;
     gap: 30px;
   }
   .header-link {
     color: var(--white);
-    line-height: 30px;
-    text-transform: uppercase;
-    padding-bottom: 6px;
   }
   .header-link:hover {
-    opacity: 0.6;
-    color: var(--white);
-  }
-  .header-link::after {
-    background-color: var(--white);
-    opacity: 0.6;
+    color: #ffffff60;
   }
 }
 
