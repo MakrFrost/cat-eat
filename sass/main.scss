@@ -6,26 +6,32 @@
 /*? Для сброса дефолтных маржин/падингов */
 @import "./components/default";
 
-/*? Хедер */
-@import "./components/header";
+//! Главная страница
+//? Хедер */
+@import "./main-page/header";
 
-/*? Блок-герой */
-@import "./components/hero";
+//? Блок-герой */
+@import "./main-page/hero";
 
-/*? Блок с программой  */
-@import "./components/program";
+//? Блок с программой  */
+@import "./main-page/program";
 
-/*? Блок "Как это работает?" */
-@import "./components/work";
+//? Блок "Как это работает?" */
+@import "./main-page/work";
 
-/*? Блок "Живой пример" */
-@import "./components/example";
+//? Блок "Живой пример" */
+@import "./main-page/example";
 
-/*? Блок с картой */
-@import "./components/map";
+//? Блок с картой */
+@import "./main-page/map";
 
-/*? Футер */
-@import "./components/footer";
+//? Футер */
+@import "./main-page//footer";
+//! Край стилей главной страницы
 
-/* test adaptive */
+//!
+
+//!
+
+// test adaptive */
 @import "./components/adap";
