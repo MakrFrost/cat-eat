@@ -302,7 +302,6 @@ iframe {
   padding-top: 24px;
   padding-bottom: 82px;
 }
-
 .hero-title {
   display: block;
   font-weight: 400;
@@ -312,7 +311,6 @@ iframe {
   color: var(--white);
   text-align: center;
 }
-
 .hero-text {
   font-weight: 400;
   font-size: 20px;
@@ -322,7 +320,6 @@ iframe {
   color: var(--white);
   text-align: center;
 }
-
 .hero-button {
   width: 100%;
   margin-bottom: 30px;
@@ -334,22 +331,17 @@ iframe {
   transition: background-color var(--animation);
   box-shadow: 1px 1px 44px 13px rgba(0, 0, 0, 0.75);
 }
-
-.hero-button:hover,
-.hero-button:focus {
+.hero-button:hover, .hero-button:focus {
   background-color: #5eaa2f;
 }
-
 .hero-button:active {
   outline: 1px solid var(--black);
   background-color: #5eaa2f;
   color: rgba(255, 255, 255, 0.1882352941);
 }
-
 .hero-image {
   width: 529px;
 }
-
 .hero-background {
   z-index: -1;
   position: absolute;
@@ -358,14 +350,13 @@ iframe {
 }
 
 @media screen and (min-width: 768px) {
-  .hero-title {
+  .hero -title {
     font-weight: 400;
     font-size: 60px;
     line-height: 60px;
     color: #000000;
     text-align: start;
   }
-
   .hero-text {
     font-weight: 400;
     font-size: 20px;
@@ -374,11 +365,9 @@ iframe {
     color: #000000;
     text-align: start;
   }
-
   .hero-button {
     width: 244px;
   }
-
   .hero-background {
     display: none;
   }
@@ -388,13 +377,11 @@ iframe {
     display: flex;
     justify-content: flex-start;
   }
-
   .hero-button {
     box-shadow: none;
     width: 300px;
     margin-bottom: 0;
   }
-
   .hero-background {
     display: block;
     top: 0;
@@ -404,27 +391,22 @@ iframe {
   padding-top: 20px;
   padding-bottom: 70px;
 }
-
 .program-list {
   display: flex;
   flex-direction: column;
 }
-
 .program-item {
   display: block;
   padding: 44px 52px 54px 42px;
   background-color: var(--bcg);
 }
-
 .program-item:not(:last-child) {
   margin-bottom: 20px;
 }
-
 .program-wrap {
   display: flex;
   align-items: center;
 }
-
 .program-title {
   margin-left: 62px;
   margin-top: 38px;
@@ -433,7 +415,6 @@ iframe {
   line-height: 36px;
   text-transform: uppercase;
 }
-
 .program-description {
   font-family: "Arial";
   margin-top: 40px;
@@ -442,22 +423,18 @@ iframe {
   font-size: 16px;
   line-height: 24px;
 }
-
 .program-link {
   display: flex;
   align-items: center;
   text-transform: uppercase;
   transition: all var(--animation);
 }
-
 .program-link:hover {
   color: #519129;
 }
-
 .program-link:hover .program-icon {
   fill: #519129;
 }
-
 .program-icon {
   width: 30px;
   height: 10px;
@@ -469,13 +446,11 @@ iframe {
     display: flex;
     flex-direction: row;
   }
-
   .program-item {
     width: 570px;
     height: 374px;
   }
-
-  .program-item:not(:last-child) {
+  .program:not(:last-child) {
     margin-right: 30px;
   }
 }
@@ -777,7 +752,6 @@ iframe {
   background-color: var(--white);
   box-shadow: 1px -3px 44px 8px rgba(0, 0, 0, 0.27) inset;
 }
-
 .map-card {
   width: 100%;
   height: 400px;
