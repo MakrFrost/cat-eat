@@ -879,7 +879,7 @@ iframe {
   background-image: linear-gradient(to bottom, #ffffff 20%, #f2f2f2 20%);
 }
 .catalog-item__last {
-  background-color: white;
+  background-image: none;
 }
 .catalog-item:not(:last-child) {
   margin-bottom: 0;
