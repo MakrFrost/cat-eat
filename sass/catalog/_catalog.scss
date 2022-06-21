@@ -1,0 +1,41 @@
+.catalog {
+  padding: 74px 0 76px 0;
+  &-title {
+    font-family: "Oswald";
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+
+    margin-bottom: 84px;
+  }
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: calc(-1 * var(--gap-card));
+    margin-left: calc(-1 * var(--gap-card));
+  }
+  &-item {
+    width: 245px;
+    height: 511px;
+
+    flex-basis: calc(100% / 4 - var(--gap-card));
+    margin-top: var(--gap-card);
+    margin-left: var(--gap-card);
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+    &-image {
+    }
+    &-text {
+    }
+    &-dscrp {
+    }
+    &-wrap {
+    }
+    &-button {
+    }
+    &-icon {
+    }
+  }
+}

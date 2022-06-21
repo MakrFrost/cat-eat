@@ -844,4 +844,31 @@ iframe {
   .footer-container {
     justify-content: space-between;
   }
+}
+.catalog {
+  padding: 74px 0 76px 0;
+}
+.catalog-title {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 60px;
+  margin-bottom: 84px;
+}
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: calc(-1 * var(--gap-card));
+  margin-left: calc(-1 * var(--gap-card));
+}
+.catalog-item {
+  width: 245px;
+  height: 511px;
+  flex-basis: calc(25% - var(--gap-card));
+  margin-top: var(--gap-card);
+  margin-left: var(--gap-card);
+}
+.catalog-item:not(:last-child) {
+  margin-bottom: 0;
 }/*# sourceMappingURL=main.css.map */
