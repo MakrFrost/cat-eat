@@ -1,7 +1,20 @@
 .product {
+  border-top: 2px solid #68b738;
+  position: relative;
   &-topic {
+    position: absolute;
+    top: -22px;
+    padding: 0 40px 0 40px;
+
+    font-family: "Oswald";
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+
+    background-color: var(--white);
   }
   &-list {
+    margin-top: 100px;
   }
   &-item {
   }
