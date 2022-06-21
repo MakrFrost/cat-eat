@@ -927,4 +927,8 @@ iframe {
 }
 .catalog-button:hover {
   background-color: var(--button-hover);
+}
+.aplication {
+  display: flex;
+  background-color: aqua;
 }/*# sourceMappingURL=main.css.map */
