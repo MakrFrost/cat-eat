@@ -990,7 +990,7 @@ iframe {
   }
 }
 .catalog {
-  padding: 74px 0 76px 0;
+  padding: 74px 0 80px 0;
 }
 .catalog-title {
   font-family: "Oswald";
@@ -1038,6 +1038,11 @@ iframe {
 }
 .catalog-item__last {
   background-image: none;
+  border: 2px solid #f2f2f2;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #444444;
 }
 .catalog-item:not(:last-child) {
   margin-bottom: 0;
@@ -1072,6 +1077,9 @@ iframe {
   padding-bottom: 8px;
   border-bottom: 1px solid #cdcdcd;
 }
+.catalog-dscrp__last {
+  border-bottom: none;
+}
 .catalog-button {
   font-weight: 400;
   font-size: 16px;
@@ -1086,6 +1094,46 @@ iframe {
 }
 .catalog-button:hover {
   background-color: var(--button-hover);
+}
+.catalog-button:active {
+  color: rgba(255, 255, 255, 0.1882352941);
+}
+.catalog-button__last {
+  background-color: #f2f2f2;
+  color: var(--black);
+}
+.catalog-button__last:hover {
+  background-color: #ebebeb;
+}
+.catalog-button__last:active {
+  color: rgba(0, 0, 0, 0.1882352941);
+}
+.catalog-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 100px;
+  fill: currentColor;
+}
+.catalog-icon:hover {
+  fill: var(--button-hover);
+}
+
+.product {
+  border-top: 2px solid #68b738;
+  position: relative;
+}
+.product-topic {
+  position: absolute;
+  top: -22px;
+  padding: 0 40px 0 40px;
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  background-color: var(--white);
+}
+.product-list {
+  margin-top: 80px;
 }
 .aplication {
   padding: 20px 0 83px;

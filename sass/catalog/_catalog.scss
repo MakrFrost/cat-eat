@@ -1,5 +1,5 @@
 .catalog {
-  padding: 74px 0 76px 0;
+  padding: 74px 0 80px 0;
   &-title {
     font-family: "Oswald";
     font-weight: 400;
@@ -34,6 +34,11 @@
     background-image: linear-gradient(to bottom, #ffffff 20%, #f2f2f2 20%);
     &__last {
       background-image: none;
+      border: 2px solid #f2f2f2;
+      font-size: 16px;
+      line-height: 18px;
+      text-align: center;
+      color: #444444;
     }
     &:not(:last-child) {
       margin-bottom: 0;
@@ -68,6 +73,9 @@
 
     padding-bottom: 8px;
     border-bottom: 1px solid #cdcdcd;
+    &__last {
+      border-bottom: none;
+    }
   }
   &-wrap {
   }
@@ -89,7 +97,27 @@
     &:hover {
       background-color: var(--button-hover);
     }
+    &:active {
+      color: #ffffff30;
+    }
+    &__last {
+      background-color: #f2f2f2;
+      color: var(--black);
+      &:hover {
+        background-color: #ebebeb;
+      }
+      &:active {
+        color: #00000030;
+      }
+    }
   }
   &-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 100px;
+    fill: currentColor;
+    &:hover {
+      fill: var(--button-hover);
+    }
   }
 }
