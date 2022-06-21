@@ -35,6 +35,8 @@
   --animation: 300ms ease-in-out;
   /* Отступы */
   --gap-card: 30px;
+  --button: #68b738;
+  --button-hover: #5eaa2f;
 }
 
 /*? Для сброса дефолтных маржин/падингов */
@@ -863,12 +865,50 @@ iframe {
   margin-left: calc(-1 * var(--gap-card));
 }
 .catalog-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 38px 40px 38px;
   width: 245px;
   height: 511px;
   flex-basis: calc(25% - var(--gap-card));
   margin-top: var(--gap-card);
   margin-left: var(--gap-card);
+  background-image: linear-gradient(to bottom, #ffffff 20%, #f2f2f2 20%);
 }
 .catalog-item:not(:last-child) {
   margin-bottom: 0;
+}
+.catalog-image {
+  width: 200px;
+  margin-bottom: 46px;
+}
+.catalog-main {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 21px;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+.catalog-dscrp {
+  font-family: "Arial";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #444444;
+  margin-bottom: 16px;
+}
+.catalog-button {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white);
+  width: 100%;
+  margin-top: 28px;
 }/*# sourceMappingURL=main.css.map */
