@@ -1088,8 +1088,59 @@ iframe {
   background-color: var(--button-hover);
 }
 .aplication {
+  padding: 20px 0 83px;
+}
+
+.aplication-title {
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 1;
+  margin-bottom: 56px;
+}
+
+.aplication-article {
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin-bottom: 66px;
+}
+
+.form-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: tomato;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--text-second);
+}
+
+.form-input {
+  margin-left: 13px;
+  padding: 10px 20px;
+  border: 1px solid #e7e7e7;
+}
+
+.form-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 25px 28px;
+  border: 1px solid #e7e7e7;
 }/*# sourceMappingURL=main.css.map */
