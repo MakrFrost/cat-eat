@@ -1,4 +1,47 @@
 .aplication {
+  padding: 20px 0 83px;
+}
+.aplication-title {
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 1;
+
+  margin-bottom: 56px;
+}
+.aplication-article {
+  line-height: 1.5;
+
+  text-transform: uppercase;
+  margin-bottom: 66px;
+}
+
+.form-content {
   display: flex;
-  background-color: tomato;
+  justify-content: space-between;
+}
+.form-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  font-size: 20px;
+  line-height: 30px;
+
+  text-transform: uppercase;
+
+  color: var(--text-second);
+}
+
+.form-input {
+  margin-left: 13px;
+  padding: 10px 20px;
+  border: 1px solid #e7e7e7;
+}
+
+.form-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px 28px;
+  border: 1px solid #e7e7e7;
 }
