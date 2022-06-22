@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="RU">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -38,13 +38,47 @@
           ><img class="header-image" src="./img/header/logo.png" alt="logo" />
           CAT <span class="logo-wrap">ENERGY</span></a
         >
+        <!-- !mobile-menu -->
         <div class="header-wrap">
+          <!-- Кнопка для мобильного меню -->
+          <button class="menu-toggle js-open-menu">
+            <svg
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewbox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+
           <!-- Язык -->
-          <div class="header-language">
-            <a href="./index(eng).html" class="header-language__eng">ENG </a>
-            <a href="./index(ua).html" class="header-language__ukr">UKR </a>
-            <a href="./index.html" class="header-language__ru"> RUS</a>
-          </div>
+          <ul class="header-lang">
+            <li class="header-lang__item">
+              <a
+                href="./catalog(eng).html"
+                class="header-lang__link mobile-link__eng"
+                >ENG</a
+              >
+            </li>
+            <li class="header-lang__item">
+              <a
+                href="./catalog(ua).html"
+                class="header-lang__link mobile-link__ua"
+                >UKR</a
+              >
+            </li>
+            <li class="header-lang__item">
+              <a href="./catalog.html" class="header-lang__link mobile-link__ru"
+                >RUS</a
+              >
+            </li>
+          </ul>
           <!-- Навигация -->
           <nav class="header-nav">
             <ul class="header-list">
@@ -66,6 +100,7 @@
             </ul>
           </nav>
         </div>
+        <!-- !mobile-menu -->
       </div>
     </header>
 
@@ -356,5 +391,69 @@
         </div>
       </section>
     </footer>
+
+    <!-- !mobile-menu navigation -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          viewbox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <div class="mobile-wrap">
+        <!-- Язык -->
+        <ul class="mobile-language">
+          <li class="mobile-item">
+            <a href="./index(eng).html" class="mobile-link mobile-link__eng"
+              >ENG</a
+            >
+          </li>
+          <li class="mobile-item">
+            <a href="./index(ua).html" class="mobile-link mobile-link__ua"
+              >UKR</a
+            >
+          </li>
+          <li class="mobile-item">
+            <a href="./index.html" class="mobile-link mobile-link__ru">RUS</a>
+          </li>
+        </ul>
+
+        <!-- Навигация -->
+        <nav class="mobile-nav">
+          <ul class="mobile-list">
+            <li class="mobile-item">
+              <a href="./index.html" class="mobile-link mobile-link__active"
+                >Главная</a
+              >
+            </li>
+            <li class="mobile-item">
+              <a href="./catalog.html" class="mobile-link">Каталог продукции</a>
+            </li>
+            <li class="mobile-item">
+              <a href="./form.html" class="mobile-link">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- !mobile-menu navigation -->
+
+    <!-- !mobile-menu -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
+    <!-- !mobile-menu -->
   </body>
 </html>

@@ -253,7 +253,7 @@ iframe {
             align-items: center;
     margin-right: 120px;
   }
-  .header-lang__item :not(:last-child) {
+  .header-lang__item:not(:last-child) {
     margin-right: 24px;
   }
   .header-lang__link {
@@ -1268,8 +1268,8 @@ iframe {
 
 .menu-container .menu-toggle {
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 25px;
+  right: 40px;
   color: #fff;
 }
 
