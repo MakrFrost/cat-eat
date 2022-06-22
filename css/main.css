@@ -1090,7 +1090,8 @@ iframe {
   background-color: var(--white);
 }
 .product-list {
-  margin-right: 80px;
+  margin-top: 0;
+  margin-right: 70px;
 }
 .product-item {
   display: -webkit-box;
