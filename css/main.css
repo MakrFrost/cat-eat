@@ -7,17 +7,17 @@
 }
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    max-width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -154,52 +154,8 @@ iframe {
   height: 50px;
   margin-right: 10px;
 }
-.header-language {
+.header-lang {
   display: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.header-language__eng {
-  padding: 10px;
-  margin-right: 24px;
-}
-.header-language__eng:hover {
-  outline: 1px solid var(--text-second);
-  border-radius: 50%;
-  color: var(--white);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), color-stop(30%, rgba(111, 111, 111, 0.7)), color-stop(60%, rgba(149, 149, 149, 0.7)), to(rgba(162, 162, 162, 0.7))), url(https://cdn.pixabay.com/photo/2012/04/10/16/14/union-jack-26119__480.png);
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(111, 111, 111, 0.7) 30%, rgba(149, 149, 149, 0.7) 60%, rgba(162, 162, 162, 0.7) 100%), url(https://cdn.pixabay.com/photo/2012/04/10/16/14/union-jack-26119__480.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-.header-language__ukr {
-  padding: 10px;
-  margin-right: 24px;
-}
-.header-language__ukr:hover {
-  outline: 1px solid var(--text-second);
-  border-radius: 50%;
-  color: var(--white);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(30%, rgba(0, 61, 255, 0.4)), color-stop(70%, rgba(255, 252, 0, 0.4))), url(https://irc-consult.com/wp-content/uploads/2020/12/ukraine-national-fabric-flag-textile-background-symbol-of-international-world-european-country_113767-2440.jpg);
-  background-image: linear-gradient(180deg, rgba(0, 61, 255, 0.4) 30%, rgba(255, 252, 0, 0.4) 70%), url(https://irc-consult.com/wp-content/uploads/2020/12/ukraine-national-fabric-flag-textile-background-symbol-of-international-world-european-country_113767-2440.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-.header-language__ru {
-  padding: 10px;
-}
-.header-language__ru:hover {
-  outline: 1px solid var(--text-second);
-  border-radius: 50%;
-  color: var(--white);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, rgba(255, 255, 255, 0.4)), color-stop(50%, rgba(0, 31, 255, 0.1993172269)), color-stop(80%, rgba(255, 255, 255, 0.4009978992))), url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Anti-war_flag_of_Russian_protesters_%282022%29.svg/250px-Anti-war_flag_of_Russian_protesters_%282022%29.svg.png);
-  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 20%, rgba(0, 31, 255, 0.1993172269) 50%, rgba(255, 255, 255, 0.4009978992) 80%), url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Anti-war_flag_of_Russian_protesters_%282022%29.svg/250px-Anti-war_flag_of_Russian_protesters_%282022%29.svg.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 .header-list {
   display: none;
@@ -234,9 +190,6 @@ iframe {
         justify-content: space-around;
   }
   .header-wrap {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -244,37 +197,11 @@ iframe {
   .header-logo {
     margin-right: 0;
   }
-  .header-language {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-right: 100px;
-  }
-  .header-language__eng {
-    margin-right: 4px;
-  }
-  .header-language__ukr {
-    margin-right: 4px;
-  }
-  .header-language__ru {
-    margin-right: 4px;
+  .header-lang {
+    display: none;
   }
   .header-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    flex-direction: column;
+    display: none;
   }
   .header-link__active::after {
     content: "";
@@ -317,33 +244,23 @@ iframe {
         -ms-flex-align: center;
             align-items: center;
   }
-  .header-logo {
-    margin-right: 0px;
-  }
-  .header-language {
+  .header-lang {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-right: 164px;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    margin-right: 120px;
   }
-  .header__eng {
-    padding: 10px;
+  .header-lang__item :not(:last-child) {
     margin-right: 24px;
   }
-  .header__ukr {
+  .header-lang__link {
     padding: 10px;
-    margin-right: 24px;
   }
-  .header__ru {
-    padding: 10px;
-    margin: 0;
+  .header-logo {
+    margin-right: 0px;
   }
   .header-list {
     display: -webkit-box;
@@ -392,6 +309,39 @@ iframe {
     transition: transform var(--animation), -webkit-transform var(--animation);
   }
 }
+.mobile-link__eng:hover {
+  outline: 1px solid var(--text-second);
+  border-radius: 50%;
+  color: var(--white);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), color-stop(30%, rgba(111, 111, 111, 0.7)), color-stop(60%, rgba(149, 149, 149, 0.7)), to(rgba(162, 162, 162, 0.7))), url(https://cdn.pixabay.com/photo/2012/04/10/16/14/union-jack-26119__480.png);
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(111, 111, 111, 0.7) 30%, rgba(149, 149, 149, 0.7) 60%, rgba(162, 162, 162, 0.7) 100%), url(https://cdn.pixabay.com/photo/2012/04/10/16/14/union-jack-26119__480.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.mobile-link__ua:hover {
+  outline: 1px solid var(--text-second);
+  border-radius: 50%;
+  color: var(--white);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(30%, rgba(0, 61, 255, 0.4)), color-stop(70%, rgba(255, 252, 0, 0.4))), url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Ukraine.svg/250px-Flag_of_Ukraine.svg.png);
+  background-image: linear-gradient(180deg, rgba(0, 61, 255, 0.4) 30%, rgba(255, 252, 0, 0.4) 70%), url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Ukraine.svg/250px-Flag_of_Ukraine.svg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.mobile-link__ru:hover {
+  outline: 1px solid var(--text-second);
+  border-radius: 50%;
+  color: var(--white);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, rgba(255, 255, 255, 0.4)), color-stop(50%, rgba(0, 31, 255, 0.1993172269)), color-stop(80%, rgba(255, 255, 255, 0.4009978992))), url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Anti-war_flag_of_Russian_protesters_%282022%29.svg/250px-Anti-war_flag_of_Russian_protesters_%282022%29.svg.png);
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 20%, rgba(0, 31, 255, 0.1993172269) 50%, rgba(255, 255, 255, 0.4009978992) 80%), url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Anti-war_flag_of_Russian_protesters_%282022%29.svg/250px-Anti-war_flag_of_Russian_protesters_%282022%29.svg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .hero {
   padding-top: 24px;
   padding-bottom: 82px;
@@ -1291,4 +1241,73 @@ iframe {
   padding: 25px 28px;
   border: 1px solid #e7e7e7;
   background-color: aquamarine;
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, rgb(255, 255, 255)), color-stop(30%, rgb(206, 246, 181)), color-stop(70%, rgb(94, 170, 47)));
+  background: linear-gradient(to bottom, rgb(255, 255, 255) 5%, rgb(206, 246, 181) 30%, rgb(94, 170, 47) 70%);
+  z-index: 999;
+  -webkit-transform: translateX(200%);
+          transform: translateX(200%);
+  -webkit-transition: -webkit-transform var(--animation);
+  transition: -webkit-transform var(--animation);
+  transition: transform var(--animation);
+  transition: transform var(--animation), -webkit-transform var(--animation);
+}
+
+.menu-container.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #fff;
+}
+
+.mobile-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mobile-menu .link {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  background-color: var(--white);
+}
+
+.js-close-menu {
+  background-color: transparent;
+}
+
+.mobile-wrap {
+  padding: 20px;
+}
+
+.mobile-language {
+  margin-bottom: 50px;
+}
+
+.mobile-item:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+@media screen and (min-width: 1200px) {
+  .menu-toggle {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */

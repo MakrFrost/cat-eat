@@ -25,65 +25,8 @@
     margin-right: 10px;
   }
   //** Языки  */
-  &-language {
+  &-lang {
     display: none;
-    align-items: center;
-    &__eng {
-      padding: 10px;
-      margin-right: 24px;
-      &:hover {
-        outline: 1px solid var(--text-second);
-        border-radius: 50%;
-        color: var(--white);
-        background-image: linear-gradient(
-            180deg,
-            rgba(0, 0, 0, 0.7) 0%,
-            rgba(111, 111, 111, 0.7) 30%,
-            rgba(149, 149, 149, 0.7) 60%,
-            rgba(162, 162, 162, 0.7) 100%
-          ),
-          url(https://cdn.pixabay.com/photo/2012/04/10/16/14/union-jack-26119__480.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-      }
-    }
-    &__ukr {
-      padding: 10px;
-      margin-right: 24px;
-      &:hover {
-        outline: 1px solid var(--text-second);
-        border-radius: 50%;
-        color: var(--white);
-        background-image: linear-gradient(
-            180deg,
-            rgba(0, 61, 255, 0.4) 30%,
-            rgba(255, 252, 0, 0.4) 70%
-          ),
-          url(https://irc-consult.com/wp-content/uploads/2020/12/ukraine-national-fabric-flag-textile-background-symbol-of-international-world-european-country_113767-2440.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-      }
-    }
-    &__ru {
-      padding: 10px;
-      &:hover {
-        outline: 1px solid var(--text-second);
-        border-radius: 50%;
-        color: var(--white);
-        background-image: linear-gradient(
-            180deg,
-            rgba(255, 255, 255, 0.4) 20%,
-            rgba(0, 31, 255, 0.19931722689075626) 50%,
-            rgba(255, 255, 255, 0.4009978991596639) 80%
-          ),
-          url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Anti-war_flag_of_Russian_protesters_%282022%29.svg/250px-Anti-war_flag_of_Russian_protesters_%282022%29.svg.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-      }
-    }
   }
   &-list {
     display: none;
@@ -113,31 +56,16 @@
       justify-content: space-around;
     }
     &-wrap {
-      display: flex;
       align-items: center;
     }
     &-logo {
       margin-right: 0;
     }
-    &-language {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      margin-right: 100px;
-      &__eng {
-        margin-right: 4px;
-      }
-      &__ukr {
-        margin-right: 4px;
-      }
-      &__ru {
-        margin-right: 4px;
-      }
+    &-lang {
+      display: none;
     }
     &-list {
-      display: flex;
-      flex-direction: row;
-      flex-direction: column;
+      display: none;
     }
     &-link {
       &__active {
@@ -172,26 +100,26 @@
       display: flex;
       align-items: center;
     }
-    &-logo {
-      margin-right: 0px;
-    }
-    &-language {
+    &-lang {
       display: flex;
       align-items: center;
-      margin-right: 164px;
-      flex-direction: row;
+      margin-right: 120px;
+      &__item {
+        :not(:last-child) {
+          margin-right: 24px;
+        }
+      }
+      &__link {
+        padding: 10px;
+      }
+
+      &-link__ua {
+      }
+      &-link__ru {
+      }
     }
-    &__eng {
-      padding: 10px;
-      margin-right: 24px;
-    }
-    &__ukr {
-      padding: 10px;
-      margin-right: 24px;
-    }
-    &__ru {
-      padding: 10px;
-      margin: 0;
+    &-logo {
+      margin-right: 0px;
     }
     &-list {
       display: flex;
@@ -231,5 +159,57 @@
         }
       }
     }
+  }
+}
+
+.mobile-link__eng {
+  &:hover {
+    outline: 1px solid var(--text-second);
+    border-radius: 50%;
+    color: var(--white);
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.7) 0%,
+        rgba(111, 111, 111, 0.7) 30%,
+        rgba(149, 149, 149, 0.7) 60%,
+        rgba(162, 162, 162, 0.7) 100%
+      ),
+      url(https://cdn.pixabay.com/photo/2012/04/10/16/14/union-jack-26119__480.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+.mobile-link__ua {
+  &:hover {
+    outline: 1px solid var(--text-second);
+    border-radius: 50%;
+    color: var(--white);
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 61, 255, 0.4) 30%,
+        rgba(255, 252, 0, 0.4) 70%
+      ),
+      url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Ukraine.svg/250px-Flag_of_Ukraine.svg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+.mobile-link__ru {
+  &:hover {
+    outline: 1px solid var(--text-second);
+    border-radius: 50%;
+    color: var(--white);
+    background-image: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.4) 20%,
+        rgba(0, 31, 255, 0.19931722689075626) 50%,
+        rgba(255, 255, 255, 0.4009978991596639) 80%
+      ),
+      url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Anti-war_flag_of_Russian_protesters_%282022%29.svg/250px-Anti-war_flag_of_Russian_protesters_%282022%29.svg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 }
