@@ -6,7 +6,7 @@
   padding-top: 82px;
   padding-bottom: 86px;
   &-flex {
-    // display: flex;
+    display: flex;
   }
   &-topic {
     position: absolute;
@@ -22,34 +22,45 @@
     background-color: var(--white);
   }
   &-list {
-    margin-top: 80px;
     margin-right: 80px;
   }
   &-item {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 895px;
+
+    padding-bottom: 18px;
+    border-bottom: 1px solid #cdcdcd;
     &:not(:last-child) {
-      margin-bottom: 38px;
+      margin-bottom: 18px;
     }
   }
   &-title {
+    width: 160px;
     font-weight: 400;
     font-size: 20px;
     line-height: 20px;
     text-transform: uppercase;
   }
   &-amount {
+    width: 132px;
     font-family: "Arial";
     font-size: 16px;
     line-height: 20px;
     color: var(--text-second);
+
+    margin-left: auto;
+    margin-right: auto;
   }
   &-price {
     font-family: "Arial";
     font-size: 16px;
     line-height: 20px;
     color: var(--text-second);
+
+    margin-left: auto;
+    margin-right: 40px;
   }
   &-button {
     font-weight: 400;
@@ -71,14 +82,28 @@
   }
   &-image {
     position: relative;
+    width: 245px;
+    height: 289px;
   }
   &-wrap {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
     position: absolute;
-    top: 120px;
-    right: 0;
+    top: 130px;
+    right: 110px;
   }
   &-gift {
+    margin-bottom: 48px;
+    width: 80px;
   }
   &-descript {
+    font-family: "Arial";
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--white);
   }
 }

@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Имя страницы -->
+    <title>Cat Energy</title>
+    <!-- Нормалайз -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Подключает шрифт -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Подключает стили SASS -->
+    <link rel="stylesheet" href="./css/main.min.css" />
+
+    <!-- Подключает стили через 1 файл -->
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+  </head>
+  <body>
+    <!-- Хедер блок -->
+
+    <header class="header">
+      <div class="container header-flex">
+        <!-- Иконка-логотип -->
+        <a href="#" class="header-logo"
+          ><img class="header-image" src="./img/header/logo.png" alt="logo" />
+          CAT <span class="logo-wrap">ENERGY</span></a
+        >
+        <!-- !mobile-menu -->
+        <div class="header-wrap">
+          <!-- Кнопка для мобильного меню -->
+          <button class="menu-toggle js-open-menu">
+            <svg
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewbox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+
+          <!-- Язык -->
+          <ul class="header-lang">
+            <li class="header-lang__item">
+              <a
+                href="./catalog(eng).html"
+                class="header-lang__link mobile-link__eng"
+                >ENG</a
+              >
+            </li>
+            <li class="header-lang__item">
+              <a
+                href="./catalog(ua).html"
+                class="header-lang__link mobile-link__ua"
+                >UKR</a
+              >
+            </li>
+            <li class="header-lang__item">
+              <a href="./catalog.html" class="header-lang__link mobile-link__ru"
+                >RUS</a
+              >
+            </li>
+          </ul>
+          <!-- Навигация -->
+          <nav class="header-nav">
+            <ul class="header-list">
+              <li class="header-item">
+                <a href="./index(eng).html" class="header-link__black"
+                  >Main Page</a
+                >
+              </li>
+              <li class="header-item">
+                <a
+                  href="./catalog(eng).html"
+                  class="header-link__black header-link__catalog"
+                  >Product Catalog</a
+                >
+              </li>
+              <li class="header-item">
+                <a href="./form.html" class="header-link__black"
+                  >Program selection</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- !mobile-menu -->
+      </div>
+    </header>
+
+    <!-- Блок с главной информацией -->
+    <main>
+      <!-- Каталог продукции -->
+      <section class="catalog">
+        <div class="container">
+          <h2 class="catalog-title">Каталог продукции</h2>
+          <ul class="catalog-list">
+            <li class="catalog-item">
+              <img
+                src="./img/catalog/catalog1.png"
+                alt="продукция"
+                class="catalog-image"
+              />
+              <h3 class="catalog-main">Cat Energy PRO 500 г</h3>
+              <p class="catalog-dscrp">
+                Масса<span class="catalog-wrap">500 г</span>
+              </p>
+              <p class="catalog-dscrp">
+                Вкус<span class="catalog-wrap">Курица</span>
+              </p>
+              <p class="catalog-dscrp">
+                Цена<span class="catalog-wrap">700 Р.</span>
+              </p>
+              <button class="catalog-button">Заказать</button>
+            </li>
+            <li class="catalog-item">
+              <img
+                src="./img/catalog/catalog2.png"
+                alt="продукция"
+                class="catalog-image"
+              />
+              <h3 class="catalog-main">Cat Energy PRO 1000 г</h3>
+              <p class="catalog-dscrp">
+                Масса<span class="catalog-wrap">1000 г</span>
+              </p>
+              <p class="catalog-dscrp">
+                Вкус<span class="catalog-wrap">Курица</span>
+              </p>
+              <p class="catalog-dscrp">
+                Цена<span class="catalog-wrap">1000 P.</span>
+              </p>
+              <button class="catalog-button">Заказать</button>
+            </li>
+            <li class="catalog-item">
+              <img
+                src="./img/catalog/catalog3.png"
+                alt="продукция"
+                class="catalog-image"
+              />
+              <h3 class="catalog-main">Cat Energy PRO 500 г</h3>
+              <p class="catalog-dscrp">
+                Масса<span class="catalog-wrap">500 г</span>
+              </p>
+              <p class="catalog-dscrp">
+                Вкус<span class="catalog-wrap">Рыба</span>
+              </p>
+              <p class="catalog-dscrp">
+                Цена<span class="catalog-wrap">700 Р.</span>
+              </p>
+              <button class="catalog-button">Заказать</button>
+            </li>
+            <li class="catalog-item">
+              <img
+                src="./img/catalog/catalog4.png"
+                alt="продукция"
+                class="catalog-image"
+              />
+              <h3 class="catalog-main">Cat Energy PRO 1000 г</h3>
+              <p class="catalog-dscrp">
+                Масса<span class="catalog-wrap">1000 г</span>
+              </p>
+              <p class="catalog-dscrp">
+                Вкус<span class="catalog-wrap">Рыба</span>
+              </p>
+              <p class="catalog-dscrp">
+                Цена<span class="catalog-wrap">1000 Р.</span>
+              </p>
+              <button class="catalog-button">Заказать</button>
+            </li>
+            <li class="catalog-item">
+              <img
+                src="./img/catalog/catalog5.png"
+                alt="продукция"
+                class="catalog-image"
+              />
+              <h3 class="catalog-main">Cat Energy slim 500 г</h3>
+              <p class="catalog-dscrp">
+                Масса<span class="catalog-wrap">500 г</span>
+              </p>
+              <p class="catalog-dscrp">
+                Вкус<span class="catalog-wrap">Гречка</span>
+              </p>
+              <p class="catalog-dscrp">
+                Цена<span class="catalog-wrap">400 Р.</span>
+              </p>
+              <button class="catalog-button">Заказать</button>
+            </li>
+            <li class="catalog-item">
+              <img
+                src="./img/catalog/catalog6.png"
+                alt="продукция"
+                class="catalog-image"
+              />
+              <h3 class="catalog-main">Cat Energy slim 1000 г</h3>
+              <p class="catalog-dscrp">
+                Масса<span class="catalog-wrap">1000 г</span>
+              </p>
+              <p class="catalog-dscrp">
+                Вкус<span class="catalog-wrap">Гречка</span>
+              </p>
+              <p class="catalog-dscrp">
+                Цена<span class="catalog-wrap">700 Р.</span>
+              </p>
+              <button class="catalog-button">Заказать</button>
+            </li>
+            <li class="catalog-item">
+              <img
+                src="./img/catalog/catalog7.png"
+                alt="продукция"
+                class="catalog-image"
+              />
+              <h3 class="catalog-main">Cat Energy slim 500 г</h3>
+              <p class="catalog-dscrp">
+                Масса<span class="catalog-wrap">500 г</span>
+              </p>
+              <p class="catalog-dscrp">
+                Вкус<span class="catalog-wrap">Рис</span>
+              </p>
+              <p class="catalog-dscrp">
+                Цена<span class="catalog-wrap">500 Р.</span>
+              </p>
+              <button class="catalog-button">Заказать</button>
+            </li>
+            <li class="catalog-item catalog-item__last">
+              <svg class="catalog-icon">
+                <use href="./img/icons.svg#plus"></use>
+              </svg>
+              <h3 class="catalog-main">Показать еще 99+ товаров</h3>
+              <p class="catalog-dscrp catalog-dscrp__last">
+                На самом деле вкусов гораздо больше!
+              </p>
+              <button class="catalog-button catalog-button__last">
+                Показать все
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Дополнительные товары -->
+      <section class="product">
+        <div class="container product-flex">
+          <h2 class="product-topic">Дополнительные товары</h2>
+          <ul class="product-list">
+            <li class="product-item">
+              <h3 class="product-title">Сахарозаменитель</h3>
+              <p class="product-amount">1 упаковка (100 г)</p>
+              <p class="product-price">200 Р</p>
+              <button class="product-button">заказать</button>
+            </li>
+            <li class="product-item">
+              <h3 class="product-title">Питьевая вода</h3>
+              <p class="product-amount">5 литров</p>
+              <p class="product-price">50 Р</p>
+              <button class="product-button">заказать</button>
+            </li>
+            <li class="product-item">
+              <h3 class="product-title">Молоко</h3>
+              <p class="product-amount">1 литр</p>
+              <p class="product-price">100 Р</p>
+              <button class="product-button">заказать</button>
+            </li>
+            <li class="product-item">
+              <h3 class="product-title">Витамины</h3>
+              <p class="product-amount">1 упаковка (30 г)</p>
+              <p class="product-price">300 Р</p>
+              <button class="product-button">заказать</button>
+            </li>
+          </ul>
+          <img
+            class="product-image"
+            src="./img/catalog/gift.jpg"
+            alt="кот в коробке"
+          />
+          <div class="product-wrap">
+            <img
+              class="product-gift"
+              src="./img/catalog/icon_gift.png"
+              alt="gift-подарок"
+            />
+            <p class="product-descript">
+              Закажите все <br />
+              и получите чехол для <br />
+              кота в подарок!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Блок-карта -->
+      <section class="map">
+        <h2 hidden>Map</h2>
+        <iframe
+          class="map-card"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12084.341363060823!2d30.52241609307644!3d50.45190631092629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1655386984666!5m2!1sru!2sua"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+    </main>
+
+    <!-- Футер-Подвал -->
+
+    <footer>
+      <section class="footer">
+        <div class="container footer-container">
+          <h2 hidden>footer</h2>
+          <div class="footer-logo">
+            <a href="#" class="header-logo"
+              ><img
+                class="header-image"
+                src="./img/header/logo.png"
+                alt="logo"
+              />
+              CAT <span class="logo-wrap">ENERGY</span></a
+            >
+          </div>
+          <div class="footer-links">
+            <ul class="footer-list">
+              <li class="footer-item">
+                <a href="" class="footer-link" target="_blank">
+                  <svg class="footer-icon vk">
+                    <use href="./img/icons.svg#fcbk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-item">
+                <a href="" class="footer-link" target="_blank">
+                  <section class="footer-instagram">
+                    <h2 hidden>instagram</h2>
+                    <svg
+                      class="linear-gradient"
+                      width="30px"
+                      height="33px"
+                      viewbox="0 0 32 32"
+                    >
+                      <defs>
+                        <!-- ? Cюда вставлять градиент -->
+                        <lineargradient
+                          x1="0%"
+                          x2="80%"
+                          y1="0%"
+                          y2="100%"
+                          id="linearGradient-1"
+                        >
+                          <!-- ? В зависимости от кол-ва цветов в градиенте -->
+                          <stop stop-color="#666666" offset="0%"></stop>
+                          <stop stop-color="#666666" offset="25%"></stop>
+                          <stop stop-color="#666666" offset="55%"></stop>
+                          <stop stop-color="#666666" offset="80%"></stop>
+                          <stop stop-color="#666666" offset="100%"></stop>
+                        </lineargradient>
+                        <!-- ? Край градиента -->
+                      </defs>
+                      <!-- ! Cюда вставлять свг(иконку) -->
+                      <path
+                        d="M15.968 0.125c2.667 0 4.845 0.031 6.532 0.093 1.437 0.063 2.719 0.313 3.844 0.751 1.082 0.416 2.020 1.020 2.812 1.811 0.776 0.778 1.392 1.715 1.794 2.759l0.018 0.054c0.437 1.124 0.687 2.406 0.75 3.843 0.063 1.688 0.093 3.865 0.093 6.531 0 2.667-0.031 4.845-0.093 6.532-0.063 1.437-0.313 2.719-0.751 3.844-0.421 1.097-1.037 2.034-1.812 2.812l0-0c-0.778 0.775-1.714 1.391-2.757 1.794l-0.055 0.019c-1.126 0.437-2.407 0.687-3.844 0.75-1.688 0.063-3.865 0.093-6.532 0.093-2.666 0-4.842-0.031-6.531-0.093-1.437-0.063-2.719-0.313-3.843-0.751-1.098-0.421-2.035-1.036-2.813-1.812l0 0c-0.775-0.778-1.391-1.714-1.794-2.757l-0.019-0.055c-0.437-1.126-0.687-2.407-0.75-3.844-0.060-1.754-0.094-3.815-0.094-5.884 0-0.228 0-0.456 0.001-0.684l-0 0.035c0-2.666 0.031-4.842 0.093-6.531 0.063-1.437 0.313-2.719 0.751-3.843 0.416-1.085 1.020-2.022 1.811-2.813 0.778-0.776 1.715-1.392 2.759-1.794l0.054-0.018c1.124-0.437 2.406-0.687 3.843-0.75 1.688-0.063 3.865-0.093 6.531-0.093zM15.968 2.187c-2.77 0-5.031 0.032-6.78 0.095-1.13 0.033-2.2 0.247-3.196 0.615l0.069-0.022c-1.5 0.626-2.561 1.688-3.186 3.187-0.346 0.926-0.561 1.996-0.594 3.112l-0 0.015c-0.061 1.832-0.096 3.985-0.096 6.147 0 0.223 0 0.445 0.001 0.668l-0-0.035c0 2.771 0.032 5.032 0.095 6.783 0.033 1.13 0.247 2.199 0.615 3.194l-0.022-0.069c0.626 1.5 1.688 2.561 3.187 3.186 0.926 0.346 1.996 0.561 3.112 0.594l0.015 0c1.749 0.063 4.010 0.095 6.78 0.095 2.771 0 5.032-0.032 6.783-0.095 1.13-0.033 2.199-0.247 3.194-0.615l-0.070 0.023c1.5-0.626 2.561-1.688 3.186-3.187 0.346-0.926 0.561-1.995 0.594-3.11l0-0.015c0.063-1.75 0.095-4.011 0.095-6.783 0-2.77-0.032-5.031-0.095-6.78-0.033-1.13-0.247-2.2-0.615-3.196l0.023 0.069c-0.626-1.5-1.688-2.561-3.187-3.186-0.926-0.346-1.995-0.561-3.11-0.594l-0.015-0c-1.832-0.061-3.985-0.096-6.147-0.096-0.223 0-0.447 0-0.67 0.001l0.034-0zM15.968 22.312c1.75 0 3.246-0.619 4.486-1.859 1.238-1.24 1.859-2.735 1.859-4.486 0-1.749-0.619-3.245-1.859-4.484-1.24-1.238-2.735-1.859-4.486-1.859-1.749 0-3.245 0.619-4.484 1.859-1.238 1.24-1.859 2.735-1.859 4.484 0 1.75 0.619 3.246 1.859 4.486 1.24 1.238 2.735 1.859 4.484 1.859zM15.968 7.843c2.251 0 4.167 0.793 5.75 2.376s2.375 3.499 2.375 5.749c0 2.251-0.792 4.167-2.375 5.75s-3.499 2.375-5.75 2.375c-2.25 0-4.166-0.792-5.749-2.375s-2.375-3.499-2.375-5.75c0-2.25 0.792-4.166 2.375-5.749s3.499-2.375 5.749-2.375zM26.344 7.531c0 0.52-0.188 0.964-0.563 1.329s-0.833 0.547-1.375 0.547c-0.010 0-0.021 0-0.033 0-0.508 0-0.967-0.209-1.296-0.547l-0-0c-0.338-0.329-0.547-0.788-0.547-1.296 0-0.011 0-0.023 0-0.034l-0 0.002c0-0.543 0.182-1 0.547-1.375 0.365-0.376 0.807-0.562 1.329-0.562 0.52 0 0.974 0.192 1.359 0.577s0.579 0.839 0.579 1.359z"
+                      ></path>
+                      <!-- ! Край свг -->
+                    </svg>
+                  </section>
+                </a>
+              </li>
+              <li class="footer-item">
+                <a href="" class="footer-link" target="_blank">
+                  <svg class="footer-icon facebook">
+                    <use href="./img/icons.svg#vk"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <!-- !mobile-menu navigation -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          viewbox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <div class="mobile-wrap">
+        <!-- Язык -->
+        <ul class="mobile-language">
+          <li class="mobile-item">
+            <a href="./index(eng).html" class="mobile-link mobile-link__eng"
+              >ENG</a
+            >
+          </li>
+          <li class="mobile-item">
+            <a href="./index(ua).html" class="mobile-link mobile-link__ua"
+              >UKR</a
+            >
+          </li>
+          <li class="mobile-item">
+            <a href="./index.html" class="mobile-link mobile-link__ru">RUS</a>
+          </li>
+        </ul>
+
+        <!-- Навигация -->
+        <nav class="mobile-nav">
+          <ul class="mobile-list">
+            <li class="mobile-item">
+              <a
+                href="./index(eng).html"
+                class="mobile-link mobile-link__active"
+                >Main Page</a
+              >
+            </li>
+            <li class="mobile-item">
+              <a href="./catalog(eng).html" class="mobile-link"
+                >Product Catalog</a
+              >
+            </li>
+            <li class="mobile-item">
+              <a href="./form.html" class="mobile-link">Program selection</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- !mobile-menu navigation -->
+
+    <!-- !mobile-menu -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
+    <!-- !mobile-menu -->
+  </body>
+</html>
