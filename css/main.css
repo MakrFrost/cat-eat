@@ -1308,6 +1308,14 @@ iframe {
   color: var(--text-second);
 }
 
+.contacts-item {
+  width: 570px;
+}
+
+.contacts-item:not(:last-child) {
+  margin-right: 78px;
+}
+
 .contacts-label {
   position: relative;
   display: -webkit-box;
@@ -1329,5 +1337,7 @@ iframe {
 
 .contacts-icon {
   position: absolute;
-  right: 0;
+  top: 18px;
+  right: 19px;
+  fill: var(--black);
 }/*# sourceMappingURL=main.css.map */
