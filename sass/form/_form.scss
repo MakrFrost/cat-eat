@@ -150,3 +150,46 @@
   border: 1px solid #e7e7e7;
   resize: none;
 }
+
+.additional {
+  position: relative;
+  border-top: 2px solid #68b738;
+
+  padding: 68px 0 82px;
+}
+
+.additional-subtitle {
+  position: absolute;
+  top: -22px;
+
+  padding: 0 40px;
+  font-size: 36px;
+  line-height: 36px;
+  background-color: var(--white);
+}
+
+.additional-list {
+  display: flex;
+  justify-content: space-between;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.additional-input {
+  margin-right: 20px;
+}
+
+.submit {
+  margin-top: 68px;
+  display: flex;
+  align-items: center;
+}
+
+.form-button {
+  margin-right: 81px;
+  padding: 13px 188px;
+  text-transform: uppercase;
+  background-color: var(--button);
+}
+.form-text {
+}
