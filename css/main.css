@@ -1194,21 +1194,27 @@ iframe {
   top: 120px;
   right: 0;
 }
-.aplication {
-  padding: 20px 0 83px;
+.information {
+  padding: 20px 0 89px;
 }
 
-.aplication-title {
+.information-title {
   font-weight: 400;
   font-size: 60px;
   line-height: 1;
   margin-bottom: 56px;
 }
 
-.aplication-article {
+.information-article {
   line-height: 1.5;
   text-transform: uppercase;
   margin-bottom: 66px;
+}
+
+.information-form {
+  color: var(--text-second);
+  font-size: 20px;
+  line-height: 30px;
 }
 
 .form-content {
@@ -1220,24 +1226,41 @@ iframe {
           justify-content: space-between;
 }
 
+.form-list {
+  width: 100%;
+  max-width: 568px;
+  margin-right: 80px;
+}
+
+.form-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .form-item:not(:last-child) {
   margin-bottom: 20px;
 }
 
 .form-label {
-  font-size: 20px;
-  line-height: 30px;
+  white-space: nowrap;
   text-transform: uppercase;
-  color: var(--text-second);
 }
 
 .form-input {
+  width: 100%;
+  text-transform: uppercase;
   margin-left: 13px;
   padding: 10px 20px;
   border: 1px solid #e7e7e7;
 }
 
-.form-wrap {
+.program {
+  width: 100%;
+  max-width: 568px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1249,6 +1272,62 @@ iframe {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 25px 28px;
+  text-transform: uppercase;
   border: 1px solid #e7e7e7;
-  background-color: aquamarine;
+}
+
+.program-input {
+  margin-right: 20px;
+}
+
+.contacts {
+  position: relative;
+  border-top: 2px solid #68b738;
+  padding: 88px 0 93px;
+}
+
+.contacts-subtitle {
+  position: absolute;
+  top: -22px;
+  padding: 0 40px;
+  font-size: 36px;
+  line-height: 36px;
+  background-color: var(--white);
+}
+
+.contacts-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--text-second);
+}
+
+.contacts-label {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  white-space: nowrap;
+}
+
+.contacts-input {
+  width: 100%;
+  text-transform: uppercase;
+  margin-left: 20px;
+  padding: 10px 20px;
+  border: 1px solid #e7e7e7;
+}
+
+.contacts-icon {
+  position: absolute;
+  right: 0;
 }/*# sourceMappingURL=main.css.map */
