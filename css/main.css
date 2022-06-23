@@ -136,16 +136,25 @@ iframe {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.header-logo {
+.header .header-logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 10px;
   color: var(--text);
+  -webkit-transition: opacity var(--animation);
+  transition: opacity var(--animation);
 }
-.header-logo-wrap {
+.header .header-logo:hover {
+  opacity: 0.6;
+}
+.header .header-logo:active {
+  opacity: 0.3;
+}
+.header .header-logo__wrap {
   margin-left: 8px;
   color: var(--text-second);
 }
@@ -175,6 +184,8 @@ iframe {
   padding-bottom: 6px;
 }
 .header-link:hover {
+  -webkit-transition: background-image var(--animation);
+  transition: background-image var(--animation);
   color: rgba(255, 255, 255, 0.3764705882);
 }
 .header-link:active {
@@ -209,10 +220,8 @@ iframe {
     width: 100%;
     height: 3px;
     background-color: var(--white);
-    -webkit-transition: -webkit-transform var(--animation);
-    transition: -webkit-transform var(--animation);
-    transition: transform var(--animation);
-    transition: transform var(--animation), -webkit-transform var(--animation);
+    -webkit-transition: background-color 80ms ease-in-out;
+    transition: background-color 80ms ease-in-out;
   }
   .header-link__active:hover::after {
     background-color: rgba(255, 255, 255, 0.3764705882);
@@ -278,6 +287,8 @@ iframe {
   }
   .header-link {
     color: var(--white);
+    -webkit-transition: color var(--animation);
+    transition: color var(--animation);
   }
   .header-link:hover {
     color: rgba(255, 255, 255, 0.3764705882);
@@ -290,6 +301,8 @@ iframe {
     line-height: 30px;
     text-transform: uppercase;
     padding-bottom: 6px;
+    -webkit-transition: color var(--animation);
+    transition: color var(--animation);
   }
   .header-link__black:hover {
     color: rgba(0, 0, 0, 0.3764705882);
@@ -875,6 +888,33 @@ iframe {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+.footer-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  color: var(--text);
+  -webkit-transition: opacity var(--animation);
+  transition: opacity var(--animation);
+}
+.footer-logo:hover {
+  opacity: 0.6;
+}
+.footer-logo:active {
+  opacity: 0.3;
+}
+.footer-logo__wrap {
+  margin-left: 8px;
+  color: var(--text-second);
+}
+.footer-image {
+  width: 60px;
+  height: 50px;
+  margin-right: 10px;
 }
 .footer-list {
   display: -webkit-box;
