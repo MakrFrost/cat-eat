@@ -5,6 +5,29 @@
     align-items: center;
     justify-content: space-around;
   }
+  &-logo {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: var(--text);
+    transition: opacity var(--animation);
+    &:hover {
+      opacity: 0.6;
+    }
+    &:active {
+      opacity: 0.3;
+    }
+    &__wrap {
+      margin-left: 8px;
+      color: var(--text-second);
+    }
+  }
+  &-image {
+    width: 60px;
+    height: 50px;
+
+    margin-right: 10px;
+  }
   &-list {
     display: flex;
   }

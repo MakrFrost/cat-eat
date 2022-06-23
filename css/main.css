@@ -136,16 +136,25 @@ iframe {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.header-logo {
+.header .header-logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 10px;
   color: var(--text);
+  -webkit-transition: opacity var(--animation);
+  transition: opacity var(--animation);
 }
-.header-logo-wrap {
+.header .header-logo:hover {
+  opacity: 0.6;
+}
+.header .header-logo:active {
+  opacity: 0.3;
+}
+.header .header-logo__wrap {
   margin-left: 8px;
   color: var(--text-second);
 }
@@ -175,6 +184,8 @@ iframe {
   padding-bottom: 6px;
 }
 .header-link:hover {
+  -webkit-transition: background-image var(--animation);
+  transition: background-image var(--animation);
   color: rgba(255, 255, 255, 0.3764705882);
 }
 .header-link:active {
@@ -209,10 +220,8 @@ iframe {
     width: 100%;
     height: 3px;
     background-color: var(--white);
-    -webkit-transition: -webkit-transform var(--animation);
-    transition: -webkit-transform var(--animation);
-    transition: transform var(--animation);
-    transition: transform var(--animation), -webkit-transform var(--animation);
+    -webkit-transition: background-color 80ms ease-in-out;
+    transition: background-color 80ms ease-in-out;
   }
   .header-link__active:hover::after {
     background-color: rgba(255, 255, 255, 0.3764705882);
@@ -278,6 +287,8 @@ iframe {
   }
   .header-link {
     color: var(--white);
+    -webkit-transition: color var(--animation);
+    transition: color var(--animation);
   }
   .header-link:hover {
     color: rgba(255, 255, 255, 0.3764705882);
@@ -290,6 +301,8 @@ iframe {
     line-height: 30px;
     text-transform: uppercase;
     padding-bottom: 6px;
+    -webkit-transition: color var(--animation);
+    transition: color var(--animation);
   }
   .header-link__black:hover {
     color: rgba(0, 0, 0, 0.3764705882);
@@ -700,37 +713,76 @@ iframe {
   text-align: center;
 }
 .example-wrap {
-  margin-top: 30px;
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  height: 600px;
 }
-.example-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.example-item__slider {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
-.example-label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.example-img {
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
+  height: 500px;
 }
-.example-slider {
-  margin: 0;
-  background-color: inherit;
+.example-img__dscr {
+  position: absolute;
+  color: #fff;
+  font-size: 35px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-shadow: 1px 1px 1px #000, 0 0 1em #000;
 }
-.example-img__dscrpt {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
-  text-transform: uppercase;
+.example-prev, .example-next {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+.example-prev:hover, .example-next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.example-next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.example-slider__dots {
+  text-align: center;
+}
+.example-dots__item {
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  margin: 0 2px;
+  background-color: #ddd;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+.example-dots__item:not(:last-child) {
+  margin-right: 16px;
+}
+
+.active,
+.slider-dots_item:hover {
+  background-color: rgb(110, 110, 110);
 }
 
 .example-slider {
@@ -851,7 +903,24 @@ iframe {
     padding: 0 20px 0 20px;
   }
 }
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .map {
+  position: relative;
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: var(--white);
@@ -862,7 +931,43 @@ iframe {
   width: 100%;
   height: 400px;
 }
+.map-block {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  -webkit-transform: translate(-10%, -50%);
+          transform: translate(-10%, -50%);
+  width: 570px;
+  max-width: 100%;
+  height: 200px;
+  padding: 66px 88px 52px 76px;
+  background-color: var(--white);
+}
+.map-title {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 2, 5;
+  text-transform: uppercase;
+  margin-right: 20px;
+  color: #111111;
+}
+.map-descr {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 2;
+  color: #444444;
+}
 
+@media screen and (min-width: 1200px) {
+  .map-block {
+    display: block;
+  }
+}
 .footer {
   padding: 28px 0 28px 0;
 }
@@ -875,6 +980,33 @@ iframe {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+.footer-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  color: var(--text);
+  -webkit-transition: opacity var(--animation);
+  transition: opacity var(--animation);
+}
+.footer-logo:hover {
+  opacity: 0.6;
+}
+.footer-logo:active {
+  opacity: 0.3;
+}
+.footer-logo__wrap {
+  margin-left: 8px;
+  color: var(--text-second);
+}
+.footer-image {
+  width: 60px;
+  height: 50px;
+  margin-right: 10px;
 }
 .footer-list {
   display: -webkit-box;
@@ -1070,6 +1202,7 @@ iframe {
 
 .product {
   border-top: 2px solid #68b738;
+  border-bottom: 2px solid #68b738;
   position: relative;
   padding-top: 82px;
   padding-bottom: 86px;

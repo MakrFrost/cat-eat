@@ -36,7 +36,7 @@
         <!-- Иконка-логотип -->
         <a href="#" class="header-logo"
           ><img class="header-image" src="./img/header/logo.png" alt="logo" />
-          CAT <span class="logo-wrap">ENERGY</span></a
+          CAT <span class="header-logo__wrap">ENERGY</span></a
         >
 
         <!-- !mobile-menu -->
@@ -263,29 +263,33 @@
             </ul>
             <p class="example-pay">Затраты на питание: 15 000 РУБ.</p>
           </div>
+
+          <!-- ! Слайдер -->
+
           <div class="example-wrap">
-            <img
-              class="example-img"
-              src="./img/example/image_cat_desktop.png"
-              alt="два котика"
-              width="690"
-            />
-            <div class="example-form">
-              <label class="example-label">
-                БЫЛО
-                <input
-                  class="example-slider"
-                  type="range"
-                  name="interest_rate"
-                  value="50"
-                  min="0"
-                  max="100"
-                  step="1"
-                />
-              </label>
-              <p class="example-img__dscrpt">СТАЛО</p>
+            <div class="examle-item__slider">
+              <img
+                src="./img/example/before.png"
+                alt="котик до"
+                class="example-img"
+              />
+              <p class="example-img__dscr">БЫЛО</p>
+            </div>
+            <div class="examle-item__slider">
+              <img
+                src="./img/example/after.png"
+                alt="котик после"
+                class="example-img"
+              />
+              <p class="example-img__dscr">СТАЛО</p>
+            </div>
+            <div class="example-slider__dots">
+              <span class="example-dots__item" onclick="currentSlide(1)"></span>
+              <span class="example-dots__item" onclick="currentSlide(2)"></span>
             </div>
           </div>
+
+          <!-- ! Слайдер -->
         </div>
       </section>
 
@@ -300,6 +304,13 @@
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
+        <div class="map-block">
+          <h4 class="map-title">
+            приглашаем к сотрудничеству<br />
+            дилеров!
+          </h4>
+          <p class="map-descr">Киев, ул. Св. Джавелина, д.14/8</p>
+        </div>
       </section>
     </main>
 
@@ -309,14 +320,15 @@
       <section class="footer">
         <div class="container footer-container">
           <h2 hidden>footer</h2>
-          <div class="footer-logo">
-            <a href="#" class="header-logo"
+          <div class="footer-wrapper">
+            <!-- Иконка-логотип -->
+            <a href="#" class="footer-logo"
               ><img
-                class="header-image"
+                class="footer-image"
                 src="./img/header/logo.png"
                 alt="logo"
               />
-              CAT <span class="logo-wrap">ENERGY</span></a
+              CAT <span class="footer-logo__wrap">ENERGY</span></a
             >
           </div>
           <div class="footer-links">
@@ -440,5 +452,8 @@
     ></script>
     <script defer src="js/mobile-menu.js"></script>
     <!-- !mobile-menu -->
+    <!-- ! Slider -->
+    <script defer src="js/slider.js"></script>
+    <!-- ! Slider -->
   </body>
 </html>
