@@ -55,7 +55,7 @@
   border: 1px solid #e7e7e7;
 }
 
-.program {
+.meal {
   width: 100%;
   max-width: 568px;
   display: flex;
@@ -66,7 +66,7 @@
   border: 1px solid #e7e7e7;
 }
 
-.program-input {
+.meal-input {
   margin-right: 20px;
 }
 
@@ -190,6 +190,4 @@
   padding: 13px 188px;
   text-transform: uppercase;
   background-color: var(--button);
-}
-.form-text {
 }

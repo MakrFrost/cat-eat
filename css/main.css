@@ -1185,9 +1185,7 @@ iframe {
 }
 
 .information {
-  padding: 20px 0 88px;
-.aplication {
-  padding: 20px 0 83px;
+  padding: 20px 0 89px;
 }
 
 .information-title {
@@ -1249,7 +1247,7 @@ iframe {
   border: 1px solid #e7e7e7;
 }
 
-.program {
+.meal {
   width: 100%;
   max-width: 568px;
   display: -webkit-box;
@@ -1267,7 +1265,7 @@ iframe {
   border: 1px solid #e7e7e7;
 }
 
-.program-input {
+.meal-input {
   margin-right: 20px;
 }
 
@@ -1353,7 +1351,6 @@ iframe {
   width: 100%;
   text-transform: uppercase;
   border: 1px solid #e7e7e7;
-
   resize: none;
 }
 
@@ -1402,7 +1399,6 @@ iframe {
   padding: 13px 188px;
   text-transform: uppercase;
   background-color: var(--button);
-  background-color: aquamarine;
 }
 
 .menu-container {
