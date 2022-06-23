@@ -1248,7 +1248,7 @@ iframe {
   border: 1px solid #e7e7e7;
 }
 
-.program {
+.meal {
   width: 100%;
   max-width: 568px;
   display: -webkit-box;
@@ -1266,7 +1266,7 @@ iframe {
   border: 1px solid #e7e7e7;
 }
 
-.program-input {
+.meal-input {
   margin-right: 20px;
 }
 
