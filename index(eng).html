@@ -265,29 +265,32 @@
             </ul>
             <p class="example-pay">Food costs: $260</p>
           </div>
+          <!-- ! Слайдер -->
+
           <div class="example-wrap">
-            <img
-              class="example-img"
-              src="./img/example/image_cat_desktop.png"
-              alt="two cats"
-              width="690"
-            />
-            <div class="example-form">
-              <label class="example-label">
-                IT WAS
-                <input
-                  class="example-slider"
-                  type="range"
-                  name="interest_rate"
-                  value="50"
-                  min="0"
-                  max="100"
-                  step="1"
-                />
-              </label>
-              <p class="example-img__dscrpt">BECOME</p>
+            <div class="examle-item__slider">
+              <img
+                src="./img/example/before.png"
+                alt="котик до"
+                class="example-img"
+              />
+              <p class="example-img__dscr">BEFORE</p>
+            </div>
+            <div class="examle-item__slider">
+              <img
+                src="./img/example/after.png"
+                alt="котик после"
+                class="example-img"
+              />
+              <p class="example-img__dscr">AFTER</p>
+            </div>
+            <div class="example-slider__dots">
+              <span class="example-dots__item" onclick="currentSlide(1)"></span>
+              <span class="example-dots__item" onclick="currentSlide(2)"></span>
             </div>
           </div>
+
+          <!-- ! Слайдер -->
         </div>
       </section>
 
@@ -448,5 +451,8 @@
     ></script>
     <script defer src="js/mobile-menu.js"></script>
     <!-- !mobile-menu -->
+    <!-- ! Slider -->
+    <script defer src="js/slider.js"></script>
+    <!-- ! Slider -->
   </body>
 </html>
