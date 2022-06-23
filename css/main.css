@@ -1202,6 +1202,7 @@ iframe {
 
 .product {
   border-top: 2px solid #68b738;
+  border-bottom: 2px solid #68b738;
   position: relative;
   padding-top: 82px;
   padding-bottom: 86px;
