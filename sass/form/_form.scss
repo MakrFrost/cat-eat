@@ -137,7 +137,7 @@
 
 .contacts {
   position: relative;
-  border-top: 2px solid #68b738;
+  border-top: 2px solid var(--button);
 
   padding: 88px 0 93px;
 }
@@ -214,7 +214,7 @@
 
 .feedback {
   position: relative;
-  border-top: 2px solid #68b738;
+  border-top: 2px solid var(--button);
 
   padding: 88px 0 93px;
 }
@@ -231,16 +231,25 @@
 
 .feedback-area {
   padding: 10px 20px;
+  outline: transparent;
   line-height: 30px;
   width: 100%;
   text-transform: uppercase;
   border: 1px solid #e7e7e7;
   resize: none;
+  transition: border var(--animation);
+}
+
+.feedback-area:hover {
+  border: 1px solid #cdcdcd;
+}
+.feedback-area:focus {
+  border: 2px solid var(--text-second);
 }
 
 .additional {
   position: relative;
-  border-top: 2px solid #68b738;
+  border-top: 2px solid var(--button);
 
   padding: 68px 0 82px;
 }
@@ -262,8 +271,46 @@
   text-transform: uppercase;
 }
 
+.additional-label {
+  display: flex;
+  align-items: center;
+}
+
+.additional-label:active {
+  opacity: 0.3;
+}
+
 .additional-input {
+  outline: transparent;
   margin-right: 20px;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  transition: border var(--animation);
+}
+
+.additional-icon {
+  margin-right: 20px;
+  padding: 7px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #e7e7e7;
+  fill: transparent;
+  transition: border var(--animation), fill var(--animation);
+}
+.additional-input:checked + .additional-icon {
+  fill: var(--button);
+  border: 1px solid #cdcdcd;
+}
+.additional-icon:hover {
+  border: 1px solid #cdcdcd;
+}
+.additional-input:focus + .additional-icon {
+  border: 1px solid var(--text-second);
 }
 
 .submit {
@@ -273,8 +320,22 @@
 }
 
 .form-button {
+  color: var(--white);
   margin-right: 81px;
   padding: 13px 188px;
   text-transform: uppercase;
+  border: 2px solid var(--button);
   background-color: var(--button);
+  transition: background-color var(--animation), fill var(--animation),
+    border var(--animation), color var(--animation);
+}
+.form-button:hover {
+  background-color: var(--button-hover);
+}
+
+.form-button:active {
+  color: #ffffff30;
+  outline: transparent;
+  border: 2px solid var(--button);
+  background-color: var(--button-hover);
 }
