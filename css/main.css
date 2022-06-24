@@ -1304,8 +1304,8 @@ iframe {
       -ms-flex-direction: column;
           flex-direction: column;
   position: absolute;
-  top: 130px;
-  right: 110px;
+  top: 25%;
+  right: 8%;
 }
 .product-gift {
   margin-bottom: 48px;
