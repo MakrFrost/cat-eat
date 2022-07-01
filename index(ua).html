@@ -25,8 +25,27 @@
     <!-- Подключает стили SASS -->
     <link rel="stylesheet" href="./css/main.min.css" />
 
-    <!-- Подключает стили через 1 файл -->
-    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+    <!-- Подключает карту -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+      integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+      integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+      crossorigin=""
+    ></script>
+
+    <!-- Подключает скрипты -->
+    <script type="module" src="./index.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- Хедер блок -->
@@ -95,7 +114,9 @@
                 >
               </li>
               <li class="header-item">
-                <a href="./form.html" class="header-link">Пiдбiр программи</a>
+                <a href="./form(ua).html" class="header-link"
+                  >Пiдбiр программи</a
+                >
               </li>
             </ul>
           </nav>
@@ -438,25 +459,12 @@
               >
             </li>
             <li class="mobile-item">
-              <a href="./form.html" class="mobile-link">Пiдбiр программи</a>
+              <a href="./form(ua).html" class="mobile-link">Пiдбiр программи</a>
             </li>
           </ul>
         </nav>
       </div>
     </div>
     <!-- !mobile-menu navigation -->
-
-    <!-- !mobile-menu -->
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
-    ></script>
-    <script defer src="js/mobile-menu.js"></script>
-    <!-- !mobile-menu -->
-    <!-- ! Slider -->
-    <script defer src="js/slider.js"></script>
-    <!-- ! Slider -->
   </body>
 </html>

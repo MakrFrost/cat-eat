@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="RU">
+<html lang="eng">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -25,27 +25,8 @@
     <!-- Подключает стили SASS -->
     <link rel="stylesheet" href="./css/main.min.css" />
 
-    <!-- Подключает карту -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
-      integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
-      crossorigin=""
-    />
-    <script
-      src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
-      integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
-      crossorigin=""
-    ></script>
-
-    <!-- Подключает скрипты -->
-    <script type="module" src="./index.js"></script>
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
-    ></script>
+    <!-- Подключает стили через 1 файл -->
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
   </head>
   <body>
     <!-- Хедер блок -->
@@ -57,8 +38,7 @@
           ><img class="header-image" src="./img/header/logo.png" alt="logo" />
           CAT <span class="header-logo__wrap">ENERGY</span></a
         >
-
-        <!-- !mobile-menu -->
+        <!-- !mobile-menu! -->
         <div class="header-wrap">
           <!-- Кнопка для мобильного меню -->
           <button class="menu-toggle js-open-menu">
@@ -81,20 +61,20 @@
           <ul class="header-lang">
             <li class="header-lang__item">
               <a
-                href="./index(eng).html"
+                href="./form(eng).html"
                 class="header-lang__link mobile-link__eng"
                 >ENG</a
               >
             </li>
             <li class="header-lang__item">
               <a
-                href="./index(ua).html"
+                href="./form(ua).html"
                 class="header-lang__link mobile-link__ua"
                 >UKR</a
               >
             </li>
             <li class="header-lang__item">
-              <a href="./index.html" class="header-lang__link mobile-link__ru"
+              <a href="./form.html" class="header-lang__link mobile-link__ru"
                 >RUS</a
               >
             </li>
@@ -103,215 +83,239 @@
           <nav class="header-nav">
             <ul class="header-list">
               <li class="header-item">
-                <a href="./index.html" class="header-link header-link__active"
-                  >Главная</a
+                <a href="./index(eng).html" class="header-link__black"
+                  >Main Page</a
                 >
               </li>
               <li class="header-item">
-                <a href="./catalog.html" class="header-link"
-                  >Каталог продукции</a
+                <a href="./catalog(eng).html" class="header-link__black"
+                  >Product Catalog</a
                 >
               </li>
               <li class="header-item">
-                <a href="./form.html" class="header-link">Подбор программы</a>
+                <a
+                  href="./form(eng).html"
+                  class="header-link__black header-link__catalog"
+                  >Program selection</a
+                >
               </li>
             </ul>
           </nav>
         </div>
-        <!-- !mobile-menu -->
+        <!-- !mobile-menu! -->
       </div>
     </header>
 
-    <!-- Блок с главной информацией -->
+    <!-- Форма Пользователя -->
+
     <main>
-      <!-- Блок-герой -->
-      <section class="hero">
-        <div class="container hero-flex">
-          <div class="hero-description">
-            <h1 class="hero-title">
-              Функциональное <br />
-              питание для котов
-            </h1>
-            <p class="hero-text">Занялся собой? Займись котом!</p>
-            <button class="hero-button">подобрать программу</button>
-          </div>
-          <div class="hero-img">
-            <img
-              class="hero-image"
-              src="./img/hero/hero-can.png"
-              alt="банка с кормом"
-            />
-          </div>
-          <img
-            class="hero-background"
-            src="./img/hero/background-hero.jpg"
-            alt="кот"
-          />
+      <section class="information">
+        <div class="container">
+          <h1 class="information-title">Подбор программы</h1>
+          <p class="information-article">
+            Заполните анкету, и мы подберем<br />
+            программу питания для вашего кота
+          </p>
+          <form class="information-form form">
+            <div class="form-content">
+              <ul class="form-list form-list-vertical">
+                <li class="form-item">
+                  <label for="name" class="form-label">ИМЯ:* </label>
+                  <input
+                    id="name"
+                    type="text"
+                    class="form-input"
+                    placeholder="БАРСИК"
+                  />
+                </li>
+
+                <li class="form-item">
+                  <label for="weight" class="form-label">Вес (кг):* </label>
+                  <input
+                    id="weight"
+                    type="number"
+                    class="form-input"
+                    placeholder="7"
+                  />
+                </li>
+
+                <li class="form-item">
+                  <label for="age" class="form-label">Возраст (лет): </label>
+                  <input
+                    id="age"
+                    type="number"
+                    class="form-input"
+                    placeholder="7"
+                  />
+                </li>
+              </ul>
+              <div class="form-meal meal">
+                <label class="meal-label">
+                  <input
+                    class="meal-input"
+                    type="radio"
+                    name="programm"
+                    value="похудение"
+                  />
+                  <div class="radiobutton">
+                    <div class="radiobutton-icon"></div>
+                  </div>
+                  похудение
+                </label>
+
+                <label class="meal-label">
+                  <input
+                    class="meal-input"
+                    type="radio"
+                    name="programm"
+                    value="Набор массы"
+                  />
+                  <div class="radiobutton">
+                    <div class="radiobutton-icon"></div>
+                  </div>
+                  Набор массы
+                </label>
+
+                <label class="meal-label">
+                  <input
+                    class="meal-input"
+                    type="radio"
+                    name="programm"
+                    value="Не знаю (Нужен ваш совет)"
+                  />
+                  <div class="radiobutton">
+                    <div class="radiobutton-icon"></div>
+                  </div>
+                  Не знаю (Нужен ваш совет)
+                </label>
+              </div>
+            </div>
+          </form>
         </div>
       </section>
-
-      <!-- Блок-каталог -->
-      <section class="program" id="program">
-        <div class="container">
-          <ul class="program-list">
-            <li class="program-item">
-              <div class="program-wrap">
-                <img
-                  src="./img/program/cat_back1.png"
-                  alt="кот логотип"
-                  class="program-img"
-                  width="106"
-                  height="100"
+      <section class="contacts">
+        <div class="contacts-wrap container">
+          <h2 class="contacts-subtitle">Контактные данные (владельца кота)</h2>
+          <ul class="contacts-list">
+            <li class="contacts-item">
+              <label class="contacts-label"
+                >E-mail:*
+                <input
+                  class="contacts-input"
+                  type="email"
+                  name="email"
+                  placeholder="кuklachev@gmail.com"
                 />
-                <h2 class="program-title">похудение</h2>
-              </div>
-              <p class="program-description">
-                Ваш кот весит больше собаки и почти утратил способность лазить
-                по деревьям? Пора на диету! Cat Energy Slim поможет вашему
-                питомцу сбросить лишний вес.
-              </p>
-              <a href="" class="program-link"
-                >каталог slim
-                <svg class="program-icon">
-                  <use href="./img/icons.svg#arrw"></use>
+                <svg class="contacts-icon" width="20" height="15">
+                  <use href="./img/icons.svg#mail"></use>
                 </svg>
-              </a>
+              </label>
             </li>
-            <li class="program-item">
-              <div class="program-wrap">
-                <img
-                  src="./img/program/cat_back2.png"
-                  alt="кот логотип"
-                  class="program-img"
-                  width="134"
+
+            <li class="contacts-item">
+              <label class="contacts-label"
+                >Телефон:*
+                <input
+                  class="contacts-input"
+                  type="tel"
+                  name="phone_number"
+                  placeholder="8 (960) 900-60-90"
                 />
-                <h2 class="program-title">набор массы</h2>
-              </div>
-              <p class="program-description">
-                Заработать авторитет среди дворовых котов и даже собак? Серия
-                Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
-              </p>
-              <a href="" class="program-link"
-                >каталог pro
-                <svg class="program-icon">
-                  <use href="./img/icons.svg#arrw"></use>
+                <svg class="contacts-icon" width="20" height="20">
+                  <use href="./img/icons.svg#phone"></use>
                 </svg>
-              </a>
+              </label>
             </li>
           </ul>
         </div>
       </section>
+      <section class="feedback">
+        <div class="feedback-wrap container">
+          <h2 class="feedback-subtitle">Комментарий</h2>
+          <label class="feedback-label">
+            <textarea
+              class="feedback-area"
+              name="feedback"
+              rows="5"
+              placeholder="Расскажите обо всех повадках кота"
+            ></textarea>
+          </label>
+        </div>
+      </section>
+      <section class="additional">
+        <div class="additional-wrap container">
+          <h2 class="additional-subtitle">Дополнительно</h2>
+          <ul class="additional-list">
+            <li class="additional-item">
+              <label for="sweetener" class="additional-label">
+                <input
+                  class="additional-input"
+                  type="checkbox"
+                  name="additional"
+                  value="сахарозаменитель"
+                  id="sweetener"
+                />
+                <svg class="additional-icon">
+                  <use href="./img/icons.svg#icon-check"></use>
+                </svg>
+                сахарозаменитель
+              </label>
+            </li>
 
-      <!-- Блок "Как это работает" -->
-      <section class="work">
-        <div class="container">
-          <h2 class="work-title">Как это работает</h2>
-          <ul class="work-list">
-            <li class="work-item">
-              <img
-                class="work-img"
-                src="./img/work/group1.png"
-                alt="Иконка-логотип"
-              />
-              <p class="work-text">
-                Функциональное питание содержит только полезные питательные
-                вещества.
-              </p>
-              <p class="work-numbers">1</p>
+            <li class="additional-item">
+              <label for="water" class="additional-label"
+                ><input
+                  class="additional-input"
+                  type="checkbox"
+                  name="additional"
+                  value="питьевая вода"
+                  id="water"
+                />
+                <svg class="additional-icon">
+                  <use href="./img/icons.svg#icon-check"></use>
+                </svg>
+                питьевая вода
+              </label>
             </li>
-            <li class="work-item">
-              <img
-                class="work-img"
-                src="./img/work/group2.png"
-                alt="Иконка-логотип"
-              />
-              <p class="work-text">
-                Выпускается в виде порошка, который нужно лишь залить кипятком и
-                готово.
-              </p>
-              <p class="work-numbers">2</p>
+
+            <li class="additional-item">
+              <label for="milk" class="additional-label">
+                <input
+                  class="additional-input"
+                  type="checkbox"
+                  name="additional"
+                  value="молоко"
+                  id="milk"
+                />
+                <svg class="additional-icon">
+                  <use href="./img/icons.svg#icon-check"></use>
+                </svg>
+                молоко
+              </label>
             </li>
-            <li class="work-item">
-              <img
-                class="work-img"
-                src="./img/work/group3.png"
-                alt="Иконка-логотип"
-              />
-              <p class="work-text">
-                Замените один-два приема обычной еды на наше функциональное
-                питание.
-              </p>
-              <p class="work-numbers">3</p>
-            </li>
-            <li class="work-item">
-              <img
-                class="work-img"
-                src="./img/work/group4.png"
-                alt="Иконка-логотип"
-              />
-              <p class="work-text">
-                Уже через месяц наслаждайтесь изменениями к лучшему вашего
-                питомца!
-              </p>
-              <p class="work-numbers">4</p>
+
+            <li class="additional-item">
+              <label for="vitamins" class="additional-label">
+                <input
+                  class="additional-input"
+                  type="checkbox"
+                  name="additional"
+                  value="витамины"
+                  id="vitamins"
+                />
+                <svg class="additional-icon">
+                  <use href="./img/icons.svg#icon-check"></use>
+                </svg>
+                витамины
+              </label>
             </li>
           </ul>
         </div>
-      </section>
-
-      <!-- Блок-примеры -->
-      <section class="example" id="example">
-        <div class="container example-flex">
-          <div class="example-container">
-            <h2 class="example-title">Живой пример</h2>
-            <p class="example-text">
-              Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм
-              на Cat Energy Slim. Отличный результат без изнуряющих тренировок!
-              При этом он не менял своих привычек и по-прежнему спит по 16 часов
-              в день.
-            </p>
-            <ul class="example-list">
-              <li class="example-item">
-                <p class="example-main">5 КИЛО</p>
-                <p class="example-second">снижение веса</p>
-              </li>
-              <li class="example-item">
-                <p class="example-main">60 ДНЕЙ</p>
-                <p class="example-second">затрачено времени</p>
-              </li>
-            </ul>
-            <p class="example-pay">Затраты на питание: 15 000 РУБ.</p>
-          </div>
-
-          <!-- ! Слайдер -->
-
-          <div class="example-wrap">
-            <div class="examle-item__slider">
-              <img
-                src="./img/example/before.png"
-                alt="котик до"
-                class="example-img"
-              />
-              <p class="example-img__dscr">БЫЛО</p>
-            </div>
-            <div class="examle-item__slider">
-              <img
-                src="./img/example/after.png"
-                alt="котик после"
-                class="example-img"
-              />
-              <p class="example-img__dscr">СТАЛО</p>
-            </div>
-            <div class="example-slider__dots">
-              <span class="example-dots__item" onclick="currentSlide(1)"></span>
-              <span class="example-dots__item" onclick="currentSlide(2)"></span>
-            </div>
-          </div>
-
-          <!-- ! Слайдер -->
+        <div class="submit container">
+          <button class="form-button" type="submit">отправить заявку</button>
+          <p class="form-text">* — Обязательные поля</p>
         </div>
       </section>
-
       <!-- Блок-карта -->
       <section class="map">
         <h2 hidden>Map</h2>
@@ -461,5 +465,15 @@
       </div>
     </div>
     <!-- !mobile-menu navigation -->
+
+    <!-- !mobile-menu -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
+    <!-- !mobile-menu -->
   </body>
 </html>
