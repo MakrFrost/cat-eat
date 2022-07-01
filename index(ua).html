@@ -37,15 +37,6 @@
       integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
       crossorigin=""
     ></script>
-
-    <!-- Подключает скрипты -->
-    <script type="module" src="./index.js"></script>
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
-    ></script>
   </head>
   <body>
     <!-- Хедер блок -->
@@ -317,20 +308,13 @@
       <!-- Блок-карта -->
       <section class="map">
         <h2 hidden>Map</h2>
-        <iframe
-          class="map-card"
-          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12084.341363060823!2d30.52241609307644!3d50.45190631092629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1655386984666!5m2!1sru!2sua"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+        <div class="map-card" id="map"></div>
         <div class="map-block">
           <h4 class="map-title">
-            приглашаем к сотрудничеству<br />
-            дилеров!
+            Запрошуємо до співпраці<br />
+            дилерiв!
           </h4>
-          <p class="map-descr">Киев, ул. Св. Джавелина, д.14/8</p>
+          <p class="map-descr">Київ, вул. Св. Джавелiни, д.14/8</p>
         </div>
       </section>
     </main>
@@ -466,5 +450,21 @@
       </div>
     </div>
     <!-- !mobile-menu navigation -->
+
+    <!-- !mobile-menu -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
+    <!-- !mobile-menu -->
+    <!-- ! Slider -->
+    <script defer src="js/slider.js"></script>
+    <!-- ! Slider -->
+    <!-- ! Map -->
+    <script defer src="./js/map.js"></script>
+    <!-- ! Map -->
   </body>
 </html>

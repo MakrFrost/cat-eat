@@ -9,6 +9,7 @@
     height: 400px;
   }
   &-block {
+    z-index: 999;
     display: none;
     position: absolute;
 
@@ -16,7 +17,7 @@
     left: 10%;
     transform: translate(-10%, -50%);
 
-    width: 570px;
+    width: 450px;
     max-width: 100%;
     height: 200px;
     padding: 66px 88px 52px 76px;
