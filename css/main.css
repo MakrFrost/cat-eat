@@ -488,12 +488,13 @@ iframe {
           align-items: center;
 }
 .program-title {
-  margin-left: 62px;
+  margin-left: 20px;
   margin-top: 38px;
   font-weight: 400;
-  font-size: 36px;
+  font-size: 34px;
   line-height: 36px;
   text-transform: uppercase;
+  text-align: center;
 }
 .program-description {
   font-family: "Arial";
@@ -645,6 +646,9 @@ iframe {
   background-color: #f2f2f2;
   padding-top: 50px;
   padding-bottom: 40px;
+}
+.example-container {
+  margin-bottom: 10px;
 }
 .example-flex {
   -webkit-box-pack: justify;
