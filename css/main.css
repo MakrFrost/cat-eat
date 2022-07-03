@@ -472,7 +472,7 @@ iframe {
 }
 .program-item {
   display: block;
-  padding: 44px 52px 54px 42px;
+  padding: 24px 22px 24px 22px;
   background-color: var(--bcg);
 }
 .program-item:not(:last-child) {
@@ -487,10 +487,11 @@ iframe {
           align-items: center;
 }
 .program-title {
-  margin-left: 20px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 38px;
   font-weight: 400;
-  font-size: 34px;
+  font-size: 32px;
   line-height: 36px;
   text-transform: uppercase;
   text-align: center;
@@ -543,9 +544,13 @@ iframe {
   .program-item {
     width: 570px;
     height: 374px;
+    padding: 44px 52px 54px 42px;
   }
   .program-item:not(:last-child) {
     margin: 0;
+  }
+  .program-item-title {
+    font-size: 36px;
   }
   .program:not(:last-child) {
     margin-right: 30px;
